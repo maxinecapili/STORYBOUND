@@ -1,7 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.preload {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #342161 0%, #A17EF4 100%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.cloud1, .cloud2, .cloud3 {
+    height: 100px;
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+}
+
+.cloud1 {
+    top: 25%;
+    transform: translateX(100%, -25%);
+    animation: clouds 3s ease infinite;
+}
+
+.cloud2 {
+    top: 50%;
+    transform: translateX(100%, -50%);
+    animation: clouds 3s ease infinite 2s;
+}
+.cloud3 {
+    top: 25%;
+    transform: translateX(100%, -75%);
+    animation: clouds 3s ease infinite 1s;
+}
+
+.witch {
+    height: 200px;
+    animation: witch 1s ease infinite;
+}
+
+.preload h3 {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-75%);
+    color: white;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+@keyframes witch{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+
+@keyframes clouds{
+    from{
+       right: 0%;
+    }
+    to{
+        right: 130%;
+    }
 }
 
 body {
@@ -22,17 +96,19 @@ header {
 
 .navigation a {
     position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
     font-size: 1.1em;
-    color: white;
     font-weight: 600;
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
     transition: .5s;
+    color: white;
 }
 
 .navigation a:hover, .navigation a.active {
-    color: black;
+    color: #F9DDA0;
 }
 
 .navigation a span {
@@ -41,8 +117,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;
-    border-radius: 30px;
+    background: white;
+    border-radius: 5px;
     z-index: -1;
     transform: scale(0);
     transition: .5s;
@@ -59,8 +135,41 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(180deg, #28125E 0%, rgba(99, 68, 175, 0.66) 31.77%, rgba(141, 103, 232, 0.46875) 54.13%, rgba(220, 156, 231, 0.92) 73.01%, rgba(237, 133, 227, 0.9) 80.21%, #F5C5EB 100%);
+    background: linear-gradient(180deg, #28125E 0%, rgba(99, 68, 175, 0.66) 31.77%, rgba(141, 103, 232, 0.46875) 54.13%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    text-shadow: 7px 8px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F9DDA0;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+

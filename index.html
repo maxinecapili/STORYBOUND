@@ -4,10 +4,53 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>StoryBound</title>
+        <link rel="icon" href="img/book-logo.png" type="image">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
+
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+            <nav class="navigation">
+                <a href="#">Home<span></span></a>
+                <a href="#">Features<span></span></a>
+                <a href="#">Arrivals<span></span></a>
+                <a href="#">About<span></span></a>
+                <a href="#popup" class="trigger">Log In</a>
+            </nav>
+        </header>
+
+        <div id="popup" class="overlay">
+            <div class="wrapper">
+                <a href="#" class="close">&times;</a>
+                <div class="column">
+                    <div class="signin">
+                        <h1>Sign In</h1>
+                        <input type="email" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <a href="#">Forgot Password</a>
+                        <button class="form-submit">Sign In</button><span>You don't have an account yet?<button id="signup">Create it now</button></span></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="parallax">
+            <img src="img/background.png" class="background" alt="background">
+            <img src="img/moon.png" class="moon" alt="moon">
+        </section>
+
+        <section class="features">
+        </section>
+
+
+        <section>
+
+        </section>
+       
+        <footer>
+
+        </footer>
 
         <div class="preload">
             <img class="witch" src="/img/witch.png" alt="witch">
@@ -18,28 +61,5 @@
         </div>
 
         <script src="/js/script.js"></script>
-
-        <header>
-            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-            <nav class="navigation">
-                <a href="#">Home<span></span></a>
-                <a href="#">Featured<span></span></a>
-                <a href="#">Arrivals<span></span></a>
-                <a href="#">About<span></span></a>
-            </nav>
-        </header>
-
-        
-        <section class="parallax">
-            <h2 id="text">Take your reading to new heights</h2>
-        </section>
-
-        <section>
-
-        </section>
-       
-        <footer>
-
-        </footer>
     </body>
 </html>

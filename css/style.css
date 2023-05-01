@@ -6,6 +6,131 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navigation a {
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+    color: white;
+}
+
+.navigation a:hover, .navigation a.active {
+    color: #F9DDA0;
+}
+
+.navigation a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    z-index: -1;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.navigation a:hover span, .navigation a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Login & Registration Form Popup - Pending */
+#log-in{
+    padding: 10px;
+    font-family: 'Poppins';
+
+}
+
+/* Parallax - Pending */
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.parallax img{
+    position: absolute;
+    bottom: center;
+}
+
+/* Features - Pending */
+.features {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer - Pending */
+footer {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #342161;
+}
+/* Media Queries */
+
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+/* Preloader */
+
 .preload {
     position: fixed;
     top: 0;
@@ -60,6 +185,7 @@
     opacity: 0;
     pointer-events: none;
 }
+
 @keyframes witch{
     from{
         transform: translateY(0px);
@@ -77,99 +203,3 @@
         right: 130%;
     }
 }
-
-body {
-    min-height: 100vh;
-}
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.navigation a {
-    position: relative;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 6px 15px;
-    transition: .5s;
-    color: white;
-}
-
-.navigation a:hover, .navigation a.active {
-    color: #F9DDA0;
-}
-
-.navigation a span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    border-radius: 5px;
-    z-index: -1;
-    transform: scale(0);
-    transition: .5s;
-}
-
-.navigation a:hover span, .navigation a.active span {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.parallax {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(180deg, #28125E 0%, rgba(99, 68, 175, 0.66) 31.77%, rgba(141, 103, 232, 0.46875) 54.13%);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#text {
-    position: absolute;
-    font-size: 5em;
-    text-shadow: 7px 8px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 87px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #F9DDA0;
-}
-
-
-/* Media Queries */
-
-@media (max-width: 992px) {
-    html {
-        font-size: 55%;
-    }
-    header {
-        padding: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-}
-

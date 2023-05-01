@@ -59,10 +59,144 @@ header {
 }
 
 /* Login & Registration Form Popup - Pending */
-#log-in{
-    padding: 10px;
-    font-family: 'Poppins';
 
+.trigger {
+    background: #c6b1f8;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 500ms;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper {
+    position: relative;
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    color: #342161;
+    font-weight: bold;
+    transition: all 200ms;
+}
+
+.column {
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details {
+    background-color: #c6b1f8;
+}
+
+.details h1 {
+    color: #342161;
+}
+
+.signin .signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    border: 2px;
+    margin: 8px 0;
+    width: 100%;
+    font-family: inherit;
+    color: #342161;
+    font-size: inherit;
+}
+
+input:focus{
+outline-color: #d1c2f1;
+}
+
+a {
+    color: #342161;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.form-submit {
+    background: #342161;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+}
+
+.form-submit:hover {
+    background: #d1c2f1;
+    transform: scale(1.1);
+}
+
+.signup .form-submit {
+    margin-top: 15px;
+}
+
+#signin, #signup {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: #342161;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.content {
+    background-color: #F9DDA0;
+    color: #342161;
+    text-align: center;
+}
+
+.close {
+    top: 0;
+    right: 10px;
+    margin: 0;
 }
 
 /* Parallax - Pending */
@@ -115,18 +249,23 @@ footer {
 }
 /* Media Queries */
 
-@media (max-width: 992px) {
-    html {
-        font-size: 55%;
-    }
-    header {
-        padding: 2rem;
+@media only screen and (max-width: 900px) {
+    .wrapper{
+        width: 80%;
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+    .wrapper{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
 
+    .column{
+        width: 100%;
+    }
 }
+
 
 
 /* Preloader */

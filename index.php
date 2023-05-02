@@ -26,10 +26,13 @@
                                 
                             <div class="signin">
                                 <h1>Sign In</h1>
+                                <form action="includes/signup.inc.php" method="post"></form>
                                  <input type="email" placeholder="Username">
                                  <input type="password" placeholder="Password">
                                  <a href="#">Forgot Password?</a>
-                                  <button class="form-submit">Sign In</button><span>You don't have an account yet?<button id="signup">Create it now</button></span>
+                                  <button class="form-submit">Sign In</button>
+                                  </form>
+                                  <span>You don't have an account yet?<button id="signup">Create it now</button></span>
                             </div>
             
                             <div class="signup">
@@ -66,6 +69,8 @@
             <img src="img/background.png" class="background" alt="background">
             <img src="img/moon.png" class="moon" alt="moon">
         </section>
+
+        <section class="featured"></section>
        
         <footer>
             <div class="container">

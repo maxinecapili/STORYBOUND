@@ -219,13 +219,40 @@ outline-color: #d1c2f1;
     pointer-events: none;
 }
 
-.parallax img{
-    position: absolute;
+.parallax .moon{ 
+    position: fixed;
     bottom: center;
 }
 
+.parallax .left-mountain {
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%;
+    pointer-events: none;
+}
+
+.parallax .right-mountain {
+    position: absolute;
+    top: 0; right: 0;
+    width: 50%;
+    pointer-events: none;
+}
+
 /* Features - Pending */
-.features {
+.featured {
+    background-color: #342161;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New Arrivals - Pending */
+.arrivals {
+    background-color: #fff;
     position: relative;
     width: 100%;
     height: 100vh;

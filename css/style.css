@@ -38,7 +38,7 @@ header {
 }
 
 .navigation a:hover, .navigation a.active {
-    color: #white;
+    color: white;
 }
 
 .navigation a span {
@@ -193,15 +193,15 @@ outline-color: #d1c2f1;
 }
 
 .content {
-    background-color: #F9DDA0;
+    background-color: #fff;
     color: #342161;
     text-align: center;
 }
 
-/* Parallax - Pending */
+/* Parallax Hero Section - Pending */
 .parallax {
     position: relative;
-    width: 100%;
+    width: 100%; 
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -220,7 +220,7 @@ outline-color: #d1c2f1;
 }
 
 .parallax .moon{ 
-    position: fixed;
+    position: absolute;
     bottom: center;
 }
 
@@ -238,16 +238,121 @@ outline-color: #d1c2f1;
     pointer-events: none;
 }
 
-/* Features - Pending */
-.featured {
-    background-color: #342161;
+/* Featured - Pending */
+.featured{
     position: relative;
+    width: 100%; 
+}
+
+.featured-heading{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.featured-heading::before{
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
     width: 100%;
-    height: 100vh;
+    height: .01rem;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.featured-heading span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: black;
+    background: #fff;
+    border: var(--border);
+}
+
+.featured-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color: #342161;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.featured .featured-slider .featured-box{
+    width: 25rem;
+    margin: 2rem 0;
+    position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: var(--border);
+    text-align: center;
+}
+
+.featured .featured-slider .featured-box:hover{
+    border: var(--border);
+}
+
+.featured .featured-slider .featured-box .featured-images{
+    padding: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+}
+
+.featured .featured-slider .featured-box:hover .featured-images{
+    transform: translateY(6rem);
+}
+
+.featured .featured-slider .featured-box .featured-images img{
+    height: 25rem;
+}
+
+.featured .featured-slider .featured-box .featured-icons{
+    border-bottom: var(--border-hover);
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+
+.featured .featured-slider .featured-box:hover .featured-icons{
+    transform: translateY(0%);
+}
+
+.featured .featured-slider .featured-box .featured-icons a{
+    color: black;
+    font-size: 2.2rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.featured .featured-slider .featured-box .featured-icons a:hover{
+    background: #c6b1f8;
+    font-size: 2.2rem;
+    margin: 1.5rem;
+}
+
+.featured .featured-slider .featured-box .featured-icons .featured-content{
+    background: #eee;
+    padding: 1.5rem;
+}
+
+.featured .featured-slider .featured-box .featured-icons .featured-content h3{
+    font-size: 2rem;
+    color: black;
+}
+
+.featured .featured-slider .featured-box .featured-icons .featured-content .featured-price{
+    font-size: 2.2rem;
+    color: black;
+    padding-top: 1rem;
+}
+
+.featured .featured-slider .featured-box .featured-icons .featured-content .featured-price span{
+    font-size: 1.5rem;
+    color: grey;
+    text-decoration: line-through;
 }
 
 /* New Arrivals - Pending */

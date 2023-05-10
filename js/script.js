@@ -1,23 +1,42 @@
-var swiper = new Swiper(".featured-slid", {
-    slidesPerView: 1,
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+var swiper = new Swiper(".featured-slider", {
     spaceBetween: 10,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        640: {
+        0: {
+            slidesPerView: 1,
+        },
+        450: {
         slidesPerView: 2,
-        spaceBetween: 20,
         },
         768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
+        slidesPerView: 3,
         },
         1024: {
-        slidesPerView: 5,
-        spaceBetween: 50,
+        slidesPerView: 4,
         },
     },
-    });
+});
 
+window.addEventListener('load', () =>{
+const preload = document.querySelector('.preload');
+preload.classList.add("preload-finish");
+});

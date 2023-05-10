@@ -13,65 +13,70 @@
     <body>
 
         <header>
-            <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
-            <nav class="navigation">
+            <a href="#" class="logo"><img src="img/logo.png" class="logo" alt="logo"></a>
+            <nav class="nav">
                 <a href="#">Home<span></span></a>
                 <a href="#">About<span></span></a>
                 <a href="#">Shop<span></span></a>
                 <a href="#">Review<span></span></a>
                 <a href="#">Contact<span></span></a>
-                <a href="#"><i class="fa fa-search"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                <a href="#popup" class="trigger">Sign In</a>
-                <div id="popup" class="overlay">
-                    <div class="wrapper">
-                        <a href="#" class="close">&times;</a>
-                        
-                        <div class="column details">
-                                
-                            <div class="signin">
-                                <h1>Sign In</h1>
-                                    <input type="email" placeholder="Email">
-                                    <input type="password" placeholder="Password">
-                                    <a href="#">Forgot Password?</a>
-                                    <button class="form-submit">Sign In</button>
-                                <span>You don't have an account yet? <button id="signup">Create now</button></span>
-                            </div>
-            
-                            <div class="signup">
-                                 <h1>Sign Up</h1>
-                                 <input type="email" placeholder="Email">
-                                 <input type="create-password" placeholder="Create Password">
-                                 <input type="confirm-password" placeholder="Confirm Password">
-                                 <button class="form-submit">Sign Up</button><span>Already have an account? <button id="signin">Sign In</button></span>
-                             </div>
-            
-                        </div>
+            </nav>
 
-                        <div class="column content">
-                            <div class="signin">
-                                <h1>Welcome Back!</h1>
-                                <p>To keep connected with us please login with your account</p>
-                            </div>
-            
-                            <div class="signup">
-                                <h1>Hello, Friend!</h1>
-                                <p>Enter your personal details and start journey with us</p>
-                            </div>
+            <div class="header-icons">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+            </div>
+
+            <a href="#popup" class="trigger">Sign In</a>
+            <div id="popup" class="overlay">
+                <div class="wrapper">
+                    <a href="#" class="close">&times;</a>
+                    
+                    <div class="column details">
+                            
+                        <div class="signin">
+                            <h1>Sign In</h1>
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <a href="#">Forgot Password?</a>
+                                <button class="form-submit">Sign In</button>
+                            <span>You don't have an account yet? <button id="signup">Create now</button></span>
+                        </div>
+        
+                        <div class="signup">
+                             <h1>Sign Up</h1>
+                             <input type="email" placeholder="Email">
+                             <input type="create-password" placeholder="Create Password">
+                             <input type="confirm-password" placeholder="Confirm Password">
+                             <button class="form-submit">Sign Up</button><span>Already have an account? <button id="signin">Sign In</button></span>
+                         </div>
+        
+                    </div>
+
+                    <div class="column content">
+                        <div class="signin">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your account</p>
+                        </div>
+        
+                        <div class="signup">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
                         </div>
                     </div>
-                </div>      
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
-                    <script type="text/javascript"> $('.signup').hide();
-            
-                        $('#signin, #signup').on(
-                            'click',
-                            function(){
-                                $('.signin, .signup').toggle();
-                            }
-                        );
-                    </script> 
-            </nav>
+                </div>
+            </div>      
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
+                <script type="text/javascript"> $('.signup').hide();
+        
+                    $('#signin, #signup').on(
+                        'click',
+                        function(){
+                            $('.signin, .signup').toggle();
+                        }
+                    );
+                </script> 
         </header>
 
         <section class="parallax">
@@ -243,10 +248,42 @@
                         <div class="featured-price">P666.66<span>P999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
+
                     </div>
                 
                 </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div>
+        </section>
+
+        <section class="arrivals" id="arrivals">
+            <h1 class="heading"><span>New Arrivals</span></h1>
+
+            <div class="arrivals-slider">
+
+                <div class="arrivals-wrapper-slider">
+                    <a href="#" class="arrivals-box">
+                        <div class="image">
+                            <img src="img/book-11.jpg" alt="">
+                        </div>
+                        <div class="arrivals-content">
+                          <h3>New Arrivals</h3>
+                          <div class="arrivals-price">P200.00<span>P199.99</span></div> 
+                          <div class="arrivals-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </section>
 
         <footer class="footer-area">
@@ -295,18 +332,12 @@
         </footer>
 
         <div class="preload">
-            <img class="witch" src="/img/witch.png" alt="witch">
+            <img class="witch" src="img/witch.png" alt="witch">
             <h3>Standby for website transport . . .</h3>
             <img class="cloud1" src="img/white-cloud.png" alt="cloud1">
             <img class="cloud2" src="img/white-cloud.png" alt="cloud2">
             <img class="cloud3" src="img/white-cloud.png" alt="cloud3">
 
-            <script type="text/javascript">
-                window.addEventListener('load', () =>{
-                const preload = document.querySelector('.preload');
-                preload.classList.add("preload-finish");
-                });
-            </script>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

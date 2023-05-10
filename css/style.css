@@ -1,70 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+:root{
+    --dark-purple: #342161;
+    --violet: #c6b1f8;
+    --black: #444;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
 *{
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0; padding: 0;
+    outline: none; border: none;
     box-sizing: border-box;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
-    font-family: "Poppins";
 }
 
 header {
-    margin-top: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: sticky;
+    top: 0; right: 0; left: 0;
     width: 100%;
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    /* z-index: 100; */
+    box-shadow: var(--box-shadow);
 }
 
-.navigation a {
+.nav a {
     position: relative;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
     transition: .5s;
+    color: #342161;
+}
+
+/* Still  Fixing */
+
+.nav a:hover, .nav a.active {
     color: white;
 }
 
-.navigation a:hover, .navigation a.active {
-    color: white;
-}
-
-.navigation a span {
+.nav a span {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fac75a;
+    background: #c6b1f8;
     z-index: -1;
     transform: scale(0);
     transition: .5s;
 }
 
-.navigation a:hover span, .navigation a.active span {
+.nav a:hover span, .nav a.active span {
     transform: scale(1);
     opacity: 1;
 }
 
+/* Currently */
+
+.header-icons i{
+    cursor: pointer;
+    margin-left: .3rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    padding: 1px;
+    text-align: center;
+    color: var(--dark-purple);
+    font-size: 1.7rem;
+}
+
+.header-icons i:hover {
+    color: var(--violet);
+}
+
+
 /* Login & Registration Form Popup -*/
 
 .trigger {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: white;
     background: none;
-    color: #c6b1f8;
-    font-size: 22px;
-    padding: 10px 20px;
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-radius: 40px;
 }
 
 .overlay {
@@ -139,7 +184,7 @@ header {
     margin: 8px 0;
     width: 100%;
     font-family: inherit;
-    color: #342161;
+    color: var(--dark-purple);
     font-size: inherit;
 }
 
@@ -148,7 +193,7 @@ outline-color: #d1c2f1;
 }
 
 .signin a {
-    color: #342161;
+    color: var(--dark-purple);
     text-decoration: none;
     font-size: 14px;
     margin: 15px 0;
@@ -181,7 +226,7 @@ outline-color: #d1c2f1;
     border: none;
     font-family: inherit;
     font-size: inherit;
-    color: #342161;
+    color: var(--dark-purple);
     font-weight: bold;
     cursor: pointer;
 }
@@ -194,7 +239,7 @@ outline-color: #d1c2f1;
 
 .content {
     background-color: #fff;
-    color: #342161;
+    color: var(--dark-purple);
     text-align: center;
 }
 
@@ -265,16 +310,17 @@ outline-color: #d1c2f1;
 .featured-heading span{
     font-size: 3rem;
     padding: .5rem 2rem;
-    color: black;
+    color: var(--black);
     background: #fff;
     border: var(--border);
 }
 
 .featured-btn{
     margin-top: 1rem;
+    margin-bottom: 1rem;
     display: inline-block;
     padding: 1rem 1rem;
-    background-color: #342161;
+    background: #342161;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
@@ -356,15 +402,12 @@ outline-color: #d1c2f1;
 }
 
 /* New Arrivals - Pending */
-.arrivals {
-    background-color: #fff;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+.arrivals .arrivals-slider .arrivals-box{
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
 }
 
 /* Footer */
@@ -549,4 +592,17 @@ outline-color: #d1c2f1;
     to{
         right: 130%;
     }
+}
+
+::-webkit-scrollbar{
+    width:15px
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#A17EF4, #c6b1f8);
+    border-radius: 10px;
 }

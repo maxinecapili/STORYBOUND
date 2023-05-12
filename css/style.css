@@ -4,6 +4,7 @@
     --dark-purple: #342161;
     --violet: #c6b1f8;
     --black: #444;
+    --white: #ffffff;
     --border: .1rem solid rgba(0, 0, 0, .1);
     --border-hover:.1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -30,15 +31,16 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0; right: 0; left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 100; */
+    z-index: 100; 
     box-shadow: var(--box-shadow);
+    transition: all .3s;
 }
 
 .nav a {
@@ -51,7 +53,7 @@ header {
     margin-left: 20px;
     padding: 6px 15px;
     transition: .5s;
-    color: #342161;
+    color: #fff;
 }
 
 /* Still  Fixing */
@@ -87,7 +89,7 @@ header {
     line-height: 4.5rem;
     padding: 1px;
     text-align: center;
-    color: var(--dark-purple);
+    color: var(--white);
     font-size: 1.7rem;
 }
 
@@ -105,11 +107,14 @@ header {
     margin: 10px 0;
     color: white;
     background: none;
-    background: linear-gradient(90deg, #755bea, #ff72c0);
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 2px;
-    border-radius: 40px;
+    border: 2px #342161;
+}
+
+.trigger:hover {
+    background: linear-gradient(90deg, #755bea, #ff72c0);
 }
 
 .overlay {
@@ -254,7 +259,7 @@ outline-color: #d1c2f1;
     align-items: center;
 }
 
-.parallax .background{
+.parallax .background {
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +269,7 @@ outline-color: #d1c2f1;
     pointer-events: none;
 }
 
-.parallax .moon{ 
+.parallax .moon { 
     position: absolute;
     bottom: center;
 }
@@ -284,19 +289,19 @@ outline-color: #d1c2f1;
 }
 
 /* Featured - Pending */
-.featured{
+.featured {
     position: relative;
     width: 100%; 
 }
 
-.featured-heading{
+.featured-heading {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
 }
 
-.featured-heading::before{
+.featured-heading::before {
     content: '';
     position: absolute;
     top: 50%; left: 0;
@@ -307,7 +312,7 @@ outline-color: #d1c2f1;
     z-index: -1;
 }
 
-.featured-heading span{
+.featured-heading span {
     font-size: 3rem;
     padding: .5rem 2rem;
     color: var(--black);
@@ -315,7 +320,7 @@ outline-color: #d1c2f1;
     border: var(--border);
 }
 
-.featured-btn{
+.featured-btn {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: inline-block;
@@ -328,7 +333,7 @@ outline-color: #d1c2f1;
     text-decoration: none;
 }
 
-.featured .featured-slider .featured-box{
+.featured .featured-slider .featured-box {
     width: 25rem;
     margin: 2rem 0;
     position: relative;
@@ -337,24 +342,24 @@ outline-color: #d1c2f1;
     text-align: center;
 }
 
-.featured .featured-slider .featured-box:hover{
+.featured .featured-slider .featured-box:hover {
     border: var(--border);
 }
 
-.featured .featured-slider .featured-box .featured-images{
+.featured .featured-slider .featured-box .featured-images {
     padding: 1rem;
     background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
 
-.featured .featured-slider .featured-box:hover .featured-images{
+.featured .featured-slider .featured-box:hover .featured-images {
     transform: translateY(6rem);
 }
 
-.featured .featured-slider .featured-box .featured-images img{
+.featured .featured-slider .featured-box .featured-images img {
     height: 25rem;
 }
 
-.featured .featured-slider .featured-box .featured-icons{
+.featured .featured-slider .featured-box .featured-icons {
     border-bottom: var(--border-hover);
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -363,11 +368,11 @@ outline-color: #d1c2f1;
     transform: translateY(-100%);
 }
 
-.featured .featured-slider .featured-box:hover .featured-icons{
+.featured .featured-slider .featured-box:hover .featured-icons {
     transform: translateY(0%);
 }
 
-.featured .featured-slider .featured-box .featured-icons a{
+.featured .featured-slider .featured-box .featured-icons a {
     color: black;
     font-size: 2.2rem;
     padding: 1.3rem 1.5rem;
@@ -412,7 +417,7 @@ outline-color: #d1c2f1;
 
 /* Footer */
 .footer-area {
-    padding: 100px 0;
+    padding: 100px 0 60px;
     background: #342161;
     color:#fff;
     position:relative;
@@ -487,7 +492,7 @@ outline-color: #d1c2f1;
     text-transform: capitalize;
     margin-top: 50px;
 }
-  
+
 /* Media Queries */
 
 @media only screen and (max-width: 900px) {

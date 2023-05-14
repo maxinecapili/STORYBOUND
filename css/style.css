@@ -116,9 +116,8 @@ header {
     color: white;
     background: none;
     font-size: 20px;
-    font-weight: 600;
     letter-spacing: 2px;
-    border: 4px solid #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .overlay {
@@ -281,13 +280,19 @@ outline-color: #d1c2f1;
 
 .hero-container p {
     color: #fff;
+    font-size: 20px;
 }
 
 .hero-btn {
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 20px;
     font-weight: 600;
     color: #000000;
-    padding: 10px 20px;
+    padding: 5px 20px;
+}
+
+.hero-btn:hover{
+    background-color: var(--black);
 }
 
 /* Featured - Pending */
@@ -296,16 +301,21 @@ outline-color: #d1c2f1;
     width: 100%; 
 }
 
-.featured-heading {
+.featured h1 {
     text-align: center;
-    margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
 }
 
-.featured-heading::before {
+.featured p {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.featured h1::before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 50%; left: 0;
     transform: translateY(-50%);
     width: 100%;
@@ -314,7 +324,7 @@ outline-color: #d1c2f1;
     z-index: -1;
 }
 
-.featured-heading span {
+.featured h1 span {
     font-size: 3rem;
     padding: .5rem 2rem;
     color: var(--black);

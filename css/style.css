@@ -32,9 +32,10 @@ body {
 
 header {
     position: fixed;
+    margin-top: 10px;
     top: 0; right: 0; left: 0;
     width: 100%;
-    padding: 30px 80px;
+    padding: 10px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,11 +44,17 @@ header {
     transition: all .3s;
 }
 
+.logo {
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+
 .nav a {
     position: relative;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     margin-left: 20px;
@@ -84,8 +91,9 @@ header {
 .header-icons i{
     cursor: pointer;
     margin-left: .3rem;
-    height: 4.5rem;
-    width: 4.5rem;
+    margin-right: .3rem;
+    height: 20px;
+    width: 3.5rem;
     line-height: 4.5rem;
     padding: 1px;
     text-align: center;
@@ -103,18 +111,13 @@ header {
 .trigger {
     position: relative;
     display: inline-block;
-    padding: 12px 36px;
+    padding: 5px 20px;
     margin: 10px 0;
     color: white;
     background: none;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 20px;
     letter-spacing: 2px;
-    border: 2px #342161;
-}
-
-.trigger:hover {
-    background: linear-gradient(90deg, #755bea, #ff72c0);
+    border: 2px solid #ffffff;
 }
 
 .overlay {
@@ -248,8 +251,8 @@ outline-color: #d1c2f1;
     text-align: center;
 }
 
-/* Parallax Hero Section - Pending */
-.parallax {
+/*  Hero Section - Pending */
+.hero {
     position: relative;
     width: 100%; 
     height: 100vh;
@@ -257,35 +260,39 @@ outline-color: #d1c2f1;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/img/bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.parallax .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.parallax .moon { 
-    position: absolute;
-    bottom: center;
+.hero-container h1 {
+    font-size: 70px;
+    color: #ffffff;
 }
 
-.parallax .left-mountain {
-    position: absolute;
-    top: 0; left: 0;
-    width: 50%;
-    pointer-events: none;
+.hero-container p {
+    color: #fff;
+    font-size: 20px;
 }
 
-.parallax .right-mountain {
-    position: absolute;
-    top: 0; right: 0;
-    width: 50%;
-    pointer-events: none;
+.hero-btn {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    padding: 5px 20px;
+}
+
+.hero-btn:hover{
+    background-color: var(--black);
 }
 
 /* Featured - Pending */
@@ -294,16 +301,21 @@ outline-color: #d1c2f1;
     width: 100%; 
 }
 
-.featured-heading {
+.featured h1 {
     text-align: center;
-    margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
 }
 
-.featured-heading::before {
+.featured p {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.featured h1::before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 50%; left: 0;
     transform: translateY(-50%);
     width: 100%;
@@ -312,7 +324,7 @@ outline-color: #d1c2f1;
     z-index: -1;
 }
 
-.featured-heading span {
+.featured h1 span {
     font-size: 3rem;
     padding: .5rem 2rem;
     color: var(--black);
@@ -406,6 +418,20 @@ outline-color: #d1c2f1;
     text-decoration: line-through;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
+    color: #fff;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+   color: #fff;
+}
+
 /* New Arrivals - Pending */
 .arrivals .arrivals-slider .arrivals-box{
     display: flex;
@@ -496,6 +522,9 @@ outline-color: #d1c2f1;
 /* Media Queries */
 
 @media only screen and (max-width: 900px) {
+    header{
+        flex-direction: column;
+    }
     .wrapper{
         width: 80%;
     }
@@ -510,6 +539,7 @@ outline-color: #d1c2f1;
 }
 
 @media only screen and (max-width: 480px) {
+    
     .wrapper{
         width: 80%;
         flex-direction: column-reverse;
@@ -531,7 +561,7 @@ outline-color: #d1c2f1;
     top: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #342161 0%, #A17EF4 100%);;
+    background: linear-gradient(180deg, #31205a 0%, #2c1368 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -608,7 +638,7 @@ outline-color: #d1c2f1;
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#A17EF4, #c6b1f8);
+    background: linear-gradient(#a27cfc, #c6b1f8);
     border-radius: 10px;
 }
 

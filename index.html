@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>STORYBOUND</title>
+        <title>STORYBOUND | Your Favorite Books, All in One Place</title>
         <link rel="icon" href="img/book-logo.png" type="image">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
@@ -14,10 +14,11 @@
 
         <header>
             <a href="#" class="logo">STORYBOUND</a>
+            
             <nav class="nav">
                 <a href="#">Home<span></span></a>
                 <a href="/html/about.html">About<span></span></a>
-                <a href="#">Shop<span></span></a>
+                <a href=".html/shop.html">Shop<span></span></a>
                 <a href="/html/review.html">Review<span></span></a>
                 <a href="/html/contact.html">Contact<span></span></a>
             </nav>
@@ -27,43 +28,43 @@
                     <a href="#"><i class="fa fa-shopping-cart"></i></a>
                     <a href="#"><i class="fa fa-heart"></i></a>
                     <a href="#popup" class="trigger">Sign In</a>
-            <div id="popup" class="overlay">
-                <div class="wrapper">
-                    <a href="#" class="close">&times;</a>
-                    
-                    <div class="column details">
-                            
-                        <div class="signin">
-                            <h1>Sign In</h1>
+                <div id="popup" class="overlay">
+                    <div class="wrapper">
+                        <a href="#" class="close">&times;</a>
+                        
+                        <div class="column details">
+                                
+                            <div class="signin">
+                                <h1>Sign In</h1>
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <a href="#">Forgot Password?</a>
+                                    <button class="form-submit">Sign In</button>
+                                <span>You don't have an account yet? <button id="signup">Create now</button></span>
+                            </div>
+            
+                            <div class="signup">
+                                <h1>Sign Up</h1>
                                 <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Password">
-                                <a href="#">Forgot Password?</a>
-                                <button class="form-submit">Sign In</button>
-                            <span>You don't have an account yet? <button id="signup">Create now</button></span>
+                                <input type="create-password" placeholder="Create Password">
+                                <input type="confirm-password" placeholder="Confirm Password">
+                                <button class="form-submit">Sign Up</button><span>Already have an account? <button id="signin">Sign In</button></span>
+                            </div>
+            
                         </div>
-        
-                        <div class="signup">
-                             <h1>Sign Up</h1>
-                             <input type="email" placeholder="Email">
-                             <input type="create-password" placeholder="Create Password">
-                             <input type="confirm-password" placeholder="Confirm Password">
-                             <button class="form-submit">Sign Up</button><span>Already have an account? <button id="signin">Sign In</button></span>
-                         </div>
-        
-                    </div>
 
-                    <div class="column content">
-                        <div class="signin">
-                            <h1>Welcome Back!</h1>
-                            <p>To keep connected with us please login with your account</p>
-                        </div>
-        
-                        <div class="signup">
-                            <h1>Hello, Friend!</h1>
-                            <p>Enter your personal details and start journey with us</p>
+                        <div class="column content">
+                            <div class="signin">
+                                <h1>Welcome Back!</h1>
+                                <p>To keep connected with us please login with your account</p>
+                            </div>
+            
+                            <div class="signup">
+                                <h1>Hello, Friend!</h1>
+                                <p>Enter your personal details and start journey with us</p>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>      
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
                 <script type="text/javascript"> $('.signup').hide();
@@ -77,7 +78,6 @@
                 </script> 
             </div>
         </header>
-
 
         <section class="hero">
             <div class="hero-container">
@@ -122,175 +122,175 @@
         </section>
 
         <section class="featured" id="featured">
-            <h1><span>Featured Books</span></h1>
+            <h1 class="heading"><span>Featured Books</span></h1>
             <p>Check out our selection of books on sale</p>
             <div class="swiper featured-slider">
                 <div class="swiper-wrapper">
                     
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-1.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>The Hunger Games</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-2.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>Catching Fire</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-3.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>Mockingjay</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-4.jpg">
                     </div>
-                    <div class="featured-content">
-                        <h3>The Ballad of Songbirds and Snakes</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                    <div class="content">
+                        <h3>The Ballad of Songbirds & Snakes</h3>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-5.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>The Raven Boys</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-6.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>The Dream Thieves</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-7.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>Blue Lily, Lily Blue</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-8.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>The Raven King</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
+                    <div class="images">
                         <img src="img/book-9.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>Six of Crows</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
                     </div>
 
-                    <div class="swiper-slide featured-box">
-                        <div class="featured-icons">
+                    <div class="swiper-slide box">
+                        <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
                         </div>
-                    <div class="featured-images">
-                        <img src="img/book-10.jpg">
+                    <div class="images">
+                        <img src="img/book-9.jpg">
                     </div>
-                    <div class="featured-content">
+                    <div class="content">
                         <h3>Crooked Kingdom</h3>
-                        <div class="featured-price">P666.66<span>P999.99</span></div>
+                        <div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
                         <a href="#" class="featured-btn">Add to Cart</a>
                     </div>
-
                     </div>
                 
                 </div>
 
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
                 <div class="swiper-button-prev"></div>
 
             </div>
@@ -298,7 +298,7 @@
 
         <section class="arrivals" id="arrivals">
             
-            <h1 class="arrivals-heading"><span>New Arrivals</span></h1>
+            <h1 class="heading"><span>New Arrivals</span></h1>
 
             <div class="swiper arrivals-slider">
 
@@ -310,7 +310,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -327,7 +327,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -344,7 +344,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -361,7 +361,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -378,7 +378,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -395,7 +395,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -412,7 +412,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -429,7 +429,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -446,7 +446,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -463,7 +463,7 @@
                         </div>
                         <div class="arrivals-content">
                           <h3>New Arrivals</h3>
-                          <div class="arrivals-price">P200.00<span>P300.99</span></div> 
+                          <div class="arrivals-price">&#8369;666.66<span>&#8369;999.99</span></div>
                           <div class="arrivals-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>

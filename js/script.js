@@ -19,7 +19,7 @@ window.onscroll = function(){
 }
 
 var swiper = new Swiper(".featured-slider", {
-    spaceBetween: 10,
+    spaceBetween: 30,
     loop:true,
     centeredSlides: true,
     autoplay: {

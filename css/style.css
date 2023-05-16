@@ -304,8 +304,9 @@ outline-color: #d1c2f1;
 /* Support Section- Pending */
 
 .support {
+    padding: 5rem 9%;
     display: grid;
-    background-color: red;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -313,22 +314,22 @@ outline-color: #d1c2f1;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    padding: 2rem 0;
 }
 
 .support-icons i{
     font-size: 3.5rem;
     color: var(--dark-purple);
-    padding: 2rem 0;
 }
 
 .support-icons h3{
-    color: var(--dark-purple);
-    font-size: 2.5rem;
+    color: var(--black);
+    font-size: 2.2rem;
     border-bottom: 0.5rem;
 }
 
 .support-icons p{
-    color: var(--violet);
+    color: var(--gray);
     font-size: 1.4rem;
 }
 
@@ -446,7 +447,7 @@ outline-color: #d1c2f1;
 }
 
 .featured .featured-slider .box .content .price{
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: black;
     padding-top: 1rem;
 }
@@ -475,11 +476,18 @@ outline-color: #d1c2f1;
 }
 
 /* New Arrivals - Pending */
+
 .arrivals {
     position: relative;
     width: 100%; 
 }
 
+.arrivals p {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 20px;
+}
 .arrivals-heading {
     text-align: center;
     margin-bottom: 2rem;

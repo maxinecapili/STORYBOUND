@@ -44,7 +44,7 @@ header {
 }
 
 .bgColor{
-    background: linear-gradient(#a27cfc, #c6b1f8);
+    background: #342161;    
 }
 
 .logo {
@@ -298,8 +298,37 @@ outline-color: #d1c2f1;
 .hero-btn:hover{
     background-color: var(--black);
 }
+/* Support - Pending */
+.support {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.support .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.support .icons i{
+    font-size: 3.5rem;
+    color: var(--dark-purple);
+    padding: 2rem 0;
+}
+
+.support .icons h3{
+    color: var(--dark-purple);
+    font-size: 2.5rem;
+    border-bottom: 0.5rem;
+}
+
+.support .icons p{
+    color: var(--violet);
+    font-size: 1.4rem;
+}
 
 /* Featured - Pending */
+
 .featured {
     position: relative;
     width: 100%; 
@@ -320,7 +349,7 @@ outline-color: #d1c2f1;
 .featured h1::before {
     content: '';
     position: relative;
-    top: 50%; left: 0;
+    top: 0; left: 0;
     transform: translateY(-50%);
     width: 100%;
     height: .01rem;
@@ -411,7 +440,7 @@ outline-color: #d1c2f1;
 }
 
 .featured .featured-slider .featured-box .featured-content .featured-price{
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     color: black;
     padding-top: 1rem;
 }
@@ -437,7 +466,29 @@ outline-color: #d1c2f1;
 }
 
 /* New Arrivals - Pending */
-.arrivals .arrivals-slider .arrivals-box{
+.arrivals {
+    position: relative;
+    width: 100%; 
+}
+
+.arrivals-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.arrivals-heading::before {
+    content: '';
+    position: relative;
+    top: 0; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.arrivals .arrivals-slider .box{
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -446,29 +497,34 @@ outline-color: #d1c2f1;
     margin: 1rem 0;
 }
 
-.arrivals .arrivals-slider .arrivals-box:hover{
+.arrivals .arrivals-slider .box:hover{
     border: var(--border);
 }
 
-.arrivals .arrivals-slider .arrivals-box .arrivals-image img {
+.arrivals .arrivals-slider .box .arrivals-image img {
     height: 15rem;
 }
 
-.arrivals .arrivals-slider .arrivals-box .arrivals-content h3 {
+.arrivals .arrivals-slider .box .arrivals-content h3 {
     font-size: 2rem;
     color: var(--black);
 }
 
-.arrivals .arrivals-slider .arrivals-box .arrivals-content .arrivals-price {
+.arrivals .arrivals-slider .box .arrivals-content .arrivals-price {
     font-size: 2.2rem;
     color: var(--black);
     padding-bottom: 0.5rem;
 }
 
-.arrivals .arrivals-slider .arrivals-box .arrivals-content .arrivals-price span{
+.arrivals .arrivals-slider .box .arrivals-content .arrivals-price span{
     font-size: 1.5rem;
     color: var(--violet);
     text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .arrivals-content .fas{
+    font-size: 1.5rem;
+    color: var(--dark-purple);
 }
 
 /* Footer */
@@ -635,7 +691,7 @@ outline-color: #d1c2f1;
     transform: translateY(-75%);
     color: white;
     font-family: 'Poppins';
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .preload-finish {

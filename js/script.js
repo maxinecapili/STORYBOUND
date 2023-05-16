@@ -1,3 +1,12 @@
+var header = document.querySelector('header');
+window.addEventListener('scroll', function () {
+    if(window.pageYOffset > 100){
+        header.classList.add('bgColor');
+    }else{
+        header.classList.remove('bgColor');
+    }
+})
+
 var scroll1 = window.pageYOffset;
 window.onscroll = function(){
     var scroll2 = window.pageYOffset;

@@ -32,7 +32,6 @@ body {
 
 header {
     position: fixed;
-    margin-top: 10px;
     top: 0; right: 0; left: 0;
     width: 100%;
     padding: 10px 80px;
@@ -44,8 +43,12 @@ header {
     transition: all .3s;
 }
 
+.bgColor{
+    background: linear-gradient(#a27cfc, #c6b1f8);
+}
+
 .logo {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
     color: #fff;
 }
@@ -54,8 +57,8 @@ header {
     position: relative;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
@@ -92,13 +95,13 @@ header {
     cursor: pointer;
     margin-left: .3rem;
     margin-right: .3rem;
-    height: 20px;
-    width: 3.5rem;
+    height: 2rem;
+    width: 2rem;
     line-height: 4.5rem;
     padding: 1px;
     text-align: center;
     color: var(--white);
-    font-size: 1.7rem;
+    font-size: 18px;
 }
 
 .header-icons i:hover {
@@ -111,11 +114,11 @@ header {
 .trigger {
     position: relative;
     display: inline-block;
-    padding: 5px 20px;
+    padding: 4px 20px;
     margin: 10px 0;
     color: white;
     background: none;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
     border: 2px solid #ffffff;
 }
@@ -260,7 +263,7 @@ outline-color: #d1c2f1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/img/bg.jpg");
+    background: url("/img/bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -274,7 +277,7 @@ outline-color: #d1c2f1;
 }
 
 .hero-container h1 {
-    font-size: 70px;
+    font-size: 50px;
     color: #ffffff;
 }
 
@@ -284,10 +287,11 @@ outline-color: #d1c2f1;
 }
 
 .hero-btn {
+    background-color: #fff;
     margin-top: 30px;
     font-size: 20px;
-    font-weight: 600;
-    color: #000000;
+    font-weight: 400;
+    color: var(--black);
     padding: 5px 20px;
 }
 
@@ -396,23 +400,23 @@ outline-color: #d1c2f1;
     margin: 1.5rem;
 }
 
-.featured .featured-slider .featured-box .featured-icons .featured-content{
+.featured .featured-slider .featured-box .featured-content{
     background: #eee;
     padding: 1.5rem;
 }
 
-.featured .featured-slider .featured-box .featured-icons .featured-content h3{
+.featured .featured-slider .featured-box .featured-content h3{
     font-size: 2rem;
     color: black;
 }
 
-.featured .featured-slider .featured-box .featured-icons .featured-content .featured-price{
+.featured .featured-slider .featured-box .featured-content .featured-price{
     font-size: 2.2rem;
     color: black;
     padding-top: 1rem;
 }
 
-.featured .featured-slider .featured-box .featured-icons .featured-content .featured-price span{
+.featured .featured-slider .featured-box .featured-content .featured-price span{
     font-size: 1.5rem;
     color: grey;
     text-decoration: line-through;
@@ -439,6 +443,32 @@ outline-color: #d1c2f1;
     gap: 1.5rem;
     padding: 2rem 1rem;
     border: var(--border);
+    margin: 1rem 0;
+}
+
+.arrivals .arrivals-slider .arrivals-box:hover{
+    border: var(--border);
+}
+
+.arrivals .arrivals-slider .arrivals-box .arrivals-image img {
+    height: 15rem;
+}
+
+.arrivals .arrivals-slider .arrivals-box .arrivals-content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.arrivals .arrivals-slider .arrivals-box .arrivals-content .arrivals-price {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+
+.arrivals .arrivals-slider .arrivals-box .arrivals-content .arrivals-price span{
+    font-size: 1.5rem;
+    color: var(--violet);
+    text-decoration: line-through;
 }
 
 /* Footer */
@@ -512,8 +542,8 @@ outline-color: #d1c2f1;
     left: 0;
     top: 5px;
 }
-  
-.copyright {
+
+.copyright p{
     text-align: center;
     text-transform: capitalize;
     margin-top: 50px;
@@ -525,9 +555,11 @@ outline-color: #d1c2f1;
     header{
         flex-direction: column;
     }
+
     .wrapper{
         width: 80%;
     }
+
     .row{
         flex-direction: column;
       }
@@ -593,7 +625,7 @@ outline-color: #d1c2f1;
 }
 
 .witch {
-    height: 300px;
+    height: 200px;
     animation: witch 1s ease infinite;
 }
 

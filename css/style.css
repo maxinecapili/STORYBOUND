@@ -544,7 +544,104 @@ outline-color: #d1c2f1;
     color: var(--dark-purple);
 }
 
+/* Deal Section */
+
+.deal{
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: center;
+    gap: 1.5rem;
+}
+
+.deal .content{
+    flex: 1 1 42rem;
+}
+
+.deal .images{
+    flex: 1 1 42rem;
+}
+
+.deal .images img{
+    width: 100%;
+}
+
+.deal .content h3{
+    color: var(--dark-purple);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.deal .content h1{
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.deal .content p {
+    padding: 1rem 0;
+    color: var(--purple);
+    font-size: 1.4rem;
+    line-height: 2;
+    text-align: left;
+}
+
+/* Reviews */
+
+.reviews-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.reviews-heading::before {
+    content: '';
+    position: relative;
+    top: 0; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.reviews .reviews-slider .box {
+    width: 30rem;
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .reviews-slider .box:hover {
+    border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3 {
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+.reviews .reviews-slider .box p {
+    color: var(--grey);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--dark-purple);
+}
+
 /* Footer */
+
 .footer-area {
     padding: 100px 0 60px;
     background: #342161;

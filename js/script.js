@@ -68,7 +68,7 @@ var swiper = new Swiper(".arrivals-slider", {
 });
 
 var swiper = new Swiper(".reviews-slider", {
-    spaceBetween: 10,
+    spaceBetween: 20    ,
     loop:true,
     centeredSlides: true,
     autoplay: {

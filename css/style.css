@@ -369,7 +369,7 @@ outline-color: #d1c2f1;
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .featured-btn {
@@ -486,7 +486,7 @@ outline-color: #d1c2f1;
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 .arrivals-heading {
     text-align: center;
@@ -554,16 +554,16 @@ outline-color: #d1c2f1;
     gap: 1.5rem;
 }
 
+.deal .image{
+    flex: 1 1 42rem;
+}
+
+.deal .image img{
+    width: 100%;
+}
+
 .deal .content{
     flex: 1 1 42rem;
-}
-
-.deal .images{
-    flex: 1 1 42rem;
-}
-
-.deal .images img{
-    width: 100%;
 }
 
 .deal .content h3{
@@ -585,7 +585,25 @@ outline-color: #d1c2f1;
     text-align: left;
 }
 
+.deal-btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem 1rem;
+    background: #342161;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+}
+
 /* Reviews */
+
+.reviews {
+    position: relative;
+    width: 100%; 
+}
 
 .reviews-heading {
     text-align: center;
@@ -602,6 +620,14 @@ outline-color: #d1c2f1;
     height: .01rem;
     background: rgba(0, 0, 0, 0.1);
     z-index: -1;
+}
+
+.reviews-heading span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+    border: var(--border);
 }
 
 .reviews .reviews-slider .box {

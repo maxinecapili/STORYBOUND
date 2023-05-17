@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Likes</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			background-color: #824cff;
+			margin-right: 10px;
+			margin-left: 10px;
+			color: #ffffff;
+		}
+
+		.home-button {
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background-color: #ffffff;
+			color: #824cff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-left: 50px;
+		}
+
+		.heart {
+			display: flex;
+			align-items: center;
+		}
+
+		.heart-icon {
+			background: #ffffff;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 5px;
+		}
+
+		#likes {
+			padding: 40px 20px;
+		}
+
+		#likes h1 {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		.book-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+		}
+
+		.book {
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			padding: 20px;
+			border-radius: 10px;
+			width: 250px;
+		}
+
+		.book img {
+			width: 250px;
+			height: auto;
+			align-items: left;
+		}
+
+		.btn {
+			background-color: #824cff;
+			color: white;
+			border: none;
+			font-size: 16px;
+			margin-top: 10px;
+			display: block; 
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: auto; 
+			margin-right: auto;
+			cursor: pointer;
+			border-radius: 50px;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			text-decoration: none;
+	}
+		
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#" class="home-button">&lt;</a><br>
+		</nav>
+	</header>
+	
+<section id="likes">
+	<div class="container">
+		<div class="heart">
+			<div class="heart-icon">
+				<span style="color: #824cff; font-size: 20px;">&hearts;</span>
+			</div>
+			<h1>Likes</h1>
+		</div>
+		<div class="book-list">
+			<div class="book">
+				<img src="img/book-1.jpg" alt="Book Title 1">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+			<div class="book">
+				<img src="img/book-6.jpg" alt="Book Title 2">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+			<div class="book">
+				<img src="img/book-11.jpg" alt="Book Title 3">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+			<div class="book">
+				<img src="img/book-16.jpg" alt="Book Title 4">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	function removeImage(button) {
+		var bookContainer = button.parentNode;
+		bookContainer.parentNode.removeChild(bookContainer);
+	}
+</script>
+
+
+
+</body>
+</html>

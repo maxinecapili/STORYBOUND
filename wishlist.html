@@ -10,11 +10,9 @@
 	
 	<style>
 		section {
-			font-family: Arial, sans-serif;
+			font-family: Poppins, sans-serif;
 			font-size: 16px;
 			line-height: 1.5;
-			background-color: #824cff;
-			color: #ffffff;
 		}
 
 		.header-container {
@@ -61,16 +59,20 @@
 			padding: 20px;
 			border-radius: 10px;
 			width: 250px;
+			position: relative;
+			overflow: hidden;
+			border: var(--border);
+			text-align: center;
 		}
 
 		.book img {
 			width: 250px;
 			height: auto;
-			align-items: left;
+			align-items: center;
 		}
 
 		.btn {
-			background-color: #824cff;
+			background-color: #342161;
 			color: white;
 			border: none;
 			font-size: 16px;
@@ -87,8 +89,7 @@
 			height: 30px;
 			text-decoration: none;
 	}
-		
-
+	
 	</style>
 </head>
 <body>
@@ -158,15 +159,18 @@
 			</script> 
 		</div>
 	</header>
+
+	<section class="pages-hero">
+		<div class="heart">
+			<div class="heart-icon">
+				<span style="color: #342161; font-size: 20px;">&hearts;</span>
+			</div>
+			<h1>Wishlist</h1>
+		</div>
+	</section>
 	
 <section id="likes">
 	<div class="container">
-		<div class="heart">
-			<div class="heart-icon">
-				<span style="color: #824cff; font-size: 20px;">&hearts;</span>
-			</div>
-			<h1>Likes</h1>
-		</div>
 		<div class="book-list">
 			<div class="book">
 				<img src="img/book-1.jpg" alt="Book Title 1">

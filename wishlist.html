@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Likes</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+	
+	<style>
+		section {
+			font-family: Poppins, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-left: 50px;
+		}
+
+		.heart {
+			display: flex;
+			align-items: center;
+		}
+
+		.heart-icon {
+			background: #ffffff;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 5px;
+		}
+
+		#likes {
+			padding: 40px 20px;
+		}
+
+		#likes h1 {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		.book-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+		}
+
+		.book {
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			padding: 20px;
+			border-radius: 10px;
+			width: 250px;
+			position: relative;
+			overflow: hidden;
+			border: var(--border);
+			text-align: center;
+		}
+
+		.book img {
+			width: 250px;
+			height: auto;
+			align-items: center;
+		}
+
+		.btn {
+			background-color: #342161;
+			color: white;
+			border: none;
+			font-size: 16px;
+			margin-top: 10px;
+			display: block; 
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: auto; 
+			margin-right: auto;
+			cursor: pointer;
+			border-radius: 50px;
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			text-decoration: none;
+	}
+	
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">STORYBOUND</a>
+		
+		<nav class="nav">
+			<a href="index.html">Home<span></span></a>
+			<a href="about.html">About<span></span></a>
+			<a href="shop.html">Shop<span></span></a>
+			<a href="review.html">Review<span></span></a>
+			<a href="contact.html">Contact<span></span></a>
+		</nav>
+
+		<div class="header-icons">
+				<a href="#"><i class="fa fa-search"></i></a>
+				<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				<a href="heart-icon.html"><i class="fa fa-heart"></i></a>
+				<a href="#popup" class="trigger">Sign In</a>
+			<div id="popup" class="overlay">
+				<div class="wrapper">
+					<a href="#" class="close">&times;</a>
+					
+					<div class="column details">
+							
+						<div class="signin">
+							<h1>Sign In</h1>
+								<input type="email" placeholder="Email">
+								<input type="password" placeholder="Password">
+								<a href="#">Forgot Password?</a>
+								<button class="form-submit">Sign In</button>
+							<span>You don't have an account yet? <button id="signup">Create now</button></span>
+						</div>
+		
+						<div class="signup">
+							<h1>Sign Up</h1>
+							<input type="email" placeholder="Email">
+							<input type="create-password" placeholder="Create Password">
+							<input type="confirm-password" placeholder="Confirm Password">
+							<button class="form-submit">Sign Up</button><span>Already have an account? <button id="signin">Sign In</button></span>
+						</div>
+		
+					</div>
+
+					<div class="column content">
+						<div class="signin">
+							<h1>Welcome Back!</h1>
+							<p>To keep connected with us please login with your account</p>
+						</div>
+		
+						<div class="signup">
+							<h1>Hello, Friend!</h1>
+							<p>Enter your personal details and start journey with us</p>
+						</div>
+					</div>
+				</div>
+		</div>      
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
+			<script type="text/javascript"> $('.signup').hide();
+	
+				$('#signin, #signup').on(
+					'click',
+					function(){
+						$('.signin, .signup').toggle();
+					}
+				);
+			</script> 
+		</div>
+	</header>
+
+	<section class="pages-hero">
+		<div class="heart">
+			<div class="heart-icon">
+				<span style="color: #342161; font-size: 20px;">&hearts;</span>
+			</div>
+			<h1>Wishlist</h1>
+		</div>
+	</section>
+	
+<section id="likes">
+	<div class="container">
+		<div class="book-list">
+			<div class="book">
+				<img src="img/book-1.jpg" alt="Book Title 1">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+			<div class="book">
+				<img src="img/book-6.jpg" alt="Book Title 2">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+			<div class="book">
+				<img src="img/book-11.jpg" alt="Book Title 3">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+			<div class="book">
+				<img src="img/book-16.jpg" alt="Book Title 4">
+				<a href="#" class="btn" onclick=removeImage(this)>X</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer-area">
+	<div class="footer">
+		<div class="col-footer">
+			<h4>STORYBOUND</h4>
+			<p>We are an online bookstore that offers an extensive collection of books designed to meet diverse interests and preferences.</p>
+			<div class="social">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="col-footer">
+			<h4>main menu</h4>
+			<ul>
+				<li><a href=""><i class="fas fa-chevron-right"></i> home</a></li>
+				<li><a href=""><i class="fas fa-chevron-right"></i> about</a></li>
+				<li><a href=""><i class="fas fa-chevron-right"></i> shop</a></li>
+				<li><a href=""><i class="fas fa-chevron-right"></i> review</a></li>
+				<li><a href=""><i class="fas fa-chevron-right"></i> contact</a></li>
+			</ul>
+		</div>
+		<div class="col-footer">
+			<h4>quick links</h4>
+			<ul>
+				<li><a href=""><i class="fas fa-chevron-right"></i> FAQs</a></li>
+				<li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+				<li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+			</ul>
+		</div>
+		<div class="col-footer">
+			<h4>contact us</h4>
+			<ul>
+				<li><a href=""><i class="fa fa-location-arrow"></i>
+					Pampanga, Philippines</a></li>
+				<li><a href=""><i class="fas fa-mobile-alt"></i> +69 0123 456 789</a></li>
+				<li><a href=""><i class="far fa-envelope"></i> support@storybound.com</a></li>
+				<li><a href=""><i class="fas fa-globe-europe"></i> www.storybound.com</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="copyright">
+		<p>STORYBOUND COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.</p>
+	</div>
+</footer>
+
+<script>
+	function removeImage(button) {
+		var bookContainer = button.parentNode;
+		bookContainer.parentNode.removeChild(bookContainer);
+	}
+</script>
+
+<!--Custom JS file link-->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -39,7 +39,7 @@ var swiper = new Swiper(".books-slider", {
 });
 
 var swiper = new Swiper(".featured-slider", {
-    spaceBetween: 30,
+    spaceBetween: 100,
     loop:true,
     centeredSlides: true,
     autoplay: {
@@ -108,15 +108,5 @@ var swiper = new Swiper(".reviews-slider", {
     },
 });
 
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".account-container");
 
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-});
 

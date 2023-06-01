@@ -17,40 +17,40 @@
       margin: 0 auto;
       padding: 20px;
     }
-
-    .back-button {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background-color: #ffffff;
-        color: #824cff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
     
     h2 {
       text-align: center;
-      color: white;
+      color: black;
     }
 
     h3 {
       text-align: center;
-      color: white;
+      color: black;
     }
 
     p {
-      color: white;
+      color: black;
     }
 
-    p1 {
-        font-size: xx-large;
-    }
-    
+    body {
+			background-image: linear-gradient(#3f2874,#6e07696f ),url('img/background.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+    #page-wrap {
+            position: relative;
+            z-index: 2;
+            width: 80%;
+            border-radius: 15px;
+            margin: 50px auto;
+            margin-top: 200px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.397); /* Updated background with 30% transparency */
+            box-shadow: 0 0 20px black;
+        }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -60,7 +60,7 @@
     }
     
     .product-card {
-      border: 1px solid #ddd;
+      border: 1px solid #000000;
       padding: 10px;
     }
     
@@ -124,11 +124,33 @@
 </head>
 <body>
 
-    <a href="index.html" class="back-button">Back</a>
+  <header>
+            
+    <div class="logo-container">
+        <img src="img/book-logo.png" alt="book-logo">
+        <a href="#" class="logo">STORYBOUND</a>
+    </div>
 
+    <nav class="nav">
+        <a href="index.html">Home<span></span></a>
+        <a href="about.html">About<span></span></a>
+        <a href="shop.html">Shop<span></span></a>
+        <a href="review.html">Review<span></span></a>
+        <a href="contact.html">Contact<span></span></a>
+    </nav>
+
+    <div class="header-icons">
+            <a href="search.html"><i class="fa fa-search"></i></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+            <a href="account.html" class="login-btn">Sign In</a>
+    
+  </header>
+  <div id="page-wrap">
   <div class="container">
     <h2>Welcome to our Shop</h2>
     
+    <div> 
     <div class="filters">
       <select>
         <option value="">All Categories</option>
@@ -147,7 +169,7 @@
       <input type="text" placeholder="Search products...">
       <button type="button">Search</button>
     </div>
-    
+  </div>
     <div class="product-grid">
       <div class="product-card">
         <img src="img/book-99.jpg" alt="Product 1">
@@ -196,5 +218,7 @@
       <p>Email: storyboundsupport@gmail.com</p>
     </div>
   </div>
+
+</div>
 </body>
 </html>

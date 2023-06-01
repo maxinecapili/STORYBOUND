@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --dark-purple: #3f2874;
+    --dark-purple: #4e348a;
     --purple: #9f79f8;
     --violet: #c6b1f8;
     --black: #000000;
@@ -71,7 +71,7 @@ header {
     font-family: 'Poppins';
     font-style: normal;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
@@ -118,13 +118,17 @@ header {
 }
 
 .login-btn {
-    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 4px 20px;
+    margin: 10px 0;
+    color: white;
     background: none;
-    border: 2px solid #fff;
-    width: 130px;
-    height: 41px;
+    font-size: 16px;
     font-weight: 600;
-    font-size: 0.8rem;
+    letter-spacing: 2px;
+    border: 2px solid #ffffff;
+    border-radius: 1.5rem;
 }
 
 /*  Hero Section */
@@ -165,18 +169,17 @@ header {
 }
 
 .hero .row .content .hero-btn {
-    width: 150px;
-    background-color: var(--dark-purple);
-    border: none;
-    outline: none;
-    height: 49px;
-    border-radius: 49px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
     margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
+    color: var(--dark-purple);
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #fff;
+    border-radius: 1.5rem;
 }
 
 .hero .row .content .hero-btn:hover{
@@ -196,7 +199,6 @@ header {
 .hero .row .books-slider a:hover img{
     transform: scale(.9)
 }
-
 
 /* Support Section */
 
@@ -1094,3 +1096,88 @@ form.sign-in-form {
       left: 50%;
     }
   }
+
+
+  .pqs {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.cart {
+			padding: 15px 10px;
+			height: 30px;
+			cursor: pointer;
+			margin: 5px;
+			margin-left: .9rem;
+			display: flex;
+			align-content: center;
+			align-items: center;
+			text-align: center;
+			background: #3f2874;
+			border-radius: 10px;
+			color: white;
+			font-size: 15px;
+			flex-wrap: wrap;
+		}
+        
+		table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+		.cart-info{
+            display: flex;
+            flex-wrap: wrap;
+			
+        }
+
+		.cart-info {
+            margin-top: 1rem;
+        }
+
+		.cart-info h3{
+            padding: 1rem;
+        }
+
+		.cart-info p{
+            padding: 1rem;
+        }
+        
+		th{
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+            background: #3f2874;
+            font-weight: normal;
+        }
+        
+		td{
+            padding: 10px ;
+        }
+
+        td input{
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+		.total-price{
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+		.total-price table{
+            border-top: 3px solid #3f2874;
+            width: 100%;
+            max-width: 20%;
+			
+        }
+        
+		td:last-child{
+            text-align: right;
+        }
+        
+		th:last-child{
+            text-align: right;
+        }

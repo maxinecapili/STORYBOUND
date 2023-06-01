@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,12 @@
     <body>
 
         <header>
-            <a href="#" class="logo">STORYBOUND</a>
             
+            <div class="logo-container">
+                <img src="img/book-logo.png" alt="book-logo">
+                <a href="#" class="logo">STORYBOUND</a>
+            </div>
+
             <nav class="nav">
                 <a href="#">Home<span></span></a>
                 <a href="about.html">About<span></span></a>
@@ -80,12 +85,30 @@
             </div>
         </header>
 
-        <section class="hero">
-            <div class="hero-container">
-            <h1>Get books up to 50% Off!</h1>
-            <p>Enjoy a wide range of books from the comfort of your own home.</p>
-            <button class="hero-btn">Shop Now</button>
+        <!-- Hero Section -->
+
+        <section class="hero" id="hero">
+
+            <div class="row">
+                
+                <div class="content">
+                    <h1>Get books up to 50% Off!</h1>
+                    <p>Embark on an extraordinary literary journey from the comfort of your own home. Our online bookstore is your gateway to a vast universe of stories, knowledge, and imagination.</p>
+                    <a href="shop.html" class="hero-btn">Shop Now</a>
+                </div>
+
+                <div class="swiper books-slider">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide"><img src="img/book-31.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="img/book-32.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="img/book-33.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="img/book-34.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="img/book-35.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="img/book-36.jpg" alt=""></a>
+                    </div>
+                </div>
             </div>
+            
         </section>
 
         <section class="support"> 
@@ -661,9 +684,9 @@
         <section class="deal">
             <div class="content">
                 <h3>Deal of the Day</h3>
-                <h1>Up to 50% Off</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, distinctio veritatis. Porro quibusdam architecto quisquam expedita doloremque asperiores, laudantium quod magnam consequatur! Ut nostrum laudantium sequi quisquam rerum modi illum.</p>
-                <a href="" class="deal-btn">Shop Now</a>
+                <h1>Enjoy Exclusive Discounts on Books Today!</h1>
+                <p>Indulge your passion for reading while saving big with our exclusive selection of discounted books. Explore a treasure trove of literary gems at unbeatable prices, where quality meets affordability. </p>
+                <a href="shop.html" class="deal-btn">Shop Now</a>
             </div>
 
             <div class="image">
@@ -772,19 +795,19 @@
                     <div class="col-footer">
                         <h4>main menu</h4>
                         <ul>
-                            <li><a href=""><i class="fas fa-chevron-right"></i> home</a></li>
-                            <li><a href=""><i class="fas fa-chevron-right"></i> about</a></li>
-                            <li><a href=""><i class="fas fa-chevron-right"></i> shop</a></li>
-                            <li><a href=""><i class="fas fa-chevron-right"></i> review</a></li>
-                            <li><a href=""><i class="fas fa-chevron-right"></i> contact</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> home</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> about</a></li>
+                            <li><a href="shop.html"><i class="fas fa-chevron-right"></i> shop</a></li>
+                            <li><a href="review.html"><i class="fas fa-chevron-right"></i> review</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> contact</a></li>
                         </ul>
                     </div>
                     <div class="col-footer">
                         <h4>quick links</h4>
                         <ul>
                             <li><a href="FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
-                            <li><a href="Privacy and Policy.html"><i class="fas fa-chevron-right"></i> privacy policy</a></li>
-                            <li><a href="terms&condition.html"><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                            <li><a href="privacypolicy.html"><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                            <li><a href="terms&conditions.html"><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
                         </ul>
                     </div>
                     <div class="col-footer">
@@ -804,14 +827,7 @@
                 </div>
         </footer>
 
-        <div class="preload">
-            <img class="witch" src="img/witch.png" alt="witch">
-            <h3>Standby for website transport . . .</h3>
-            <img class="cloud1" src="img/white-cloud.png" alt="cloud1">
-            <img class="cloud2" src="img/white-cloud.png" alt="cloud2">
-            <img class="cloud3" src="img/white-cloud.png" alt="cloud3">
-
-        </div>
+        
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 

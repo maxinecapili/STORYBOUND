@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --dark-purple: #342161;
+    --dark-purple: #3f2874;
     --violet: #c6b1f8;
     --black: #000000;
     --grey: #808080; 
@@ -48,7 +48,18 @@ header {
     background: #342161;    
 }
 
+.logo-container {
+    display: flex;
+    gap: .5rem;
+}
+
+.logo-container img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 .logo {
+    gap: 1rem;
     font-size: 30px;
     font-weight: 800;
     color: #fff;
@@ -90,8 +101,6 @@ header {
     opacity: 1;
 }
 
-/* Currently */
-
 .header-icons i{
     cursor: pointer;
     margin-left: .3rem;
@@ -109,7 +118,6 @@ header {
     color: var(--violet);
 }
 
-
 /* Login & Registration Form Popup -*/
 
 .trigger {
@@ -119,9 +127,10 @@ header {
     margin: 10px 0;
     color: white;
     background: none;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 2px;
     border: 2px solid #ffffff;
+    border-radius: 1.5rem;
 }
 
 .overlay {
@@ -255,59 +264,82 @@ outline-color: #d1c2f1;
     text-align: center;
 }
 
-/*  Hero Section - Pending */
+/*  Hero Section */
 
 .hero {
-    position: relative;
-    width: 100%; 
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("/img/bg.jpg");
+    width: 100%; height: 100vh;
+    background: url("/img/bg.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.hero-container {
+.hero .row {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 8.5rem;
 }
 
-.hero-container h1 {
-    font-size: 50px;
+.hero .row .content{
+    flex: 1 1 42rem;
+    background-color: transparent;
+    padding: 5rem;
+    text-align: left;
+}
+
+.hero .row .content h1 {
+    padding: .5rem;
+    font-size: 4.5rem;
     color: #ffffff;
 }
 
-.hero-container p {
+.hero .row .content p {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: .5rem;
 }
 
-.hero-btn {
+.hero .row .content .hero-btn {
     background-color: #fff;
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 60px;
+    font-size: 18px;
     font-weight: 400;
-    color: var(--black);
-    padding: 5px 20px;
+    color: var(--dark-purple);
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 6px 20px;
 }
 
-.hero-btn:hover{
-    background-color: var(--black);
+.hero .row .content .hero-btn:hover{
+    background-color: var(--violet);
 }
 
-/* Support Section- Pending */
+.hero .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero .row .books-slider a img{
+    height: 40rem
+}
+
+.hero .row .books-slider a:hover img{
+    transform: scale(.9)
+}
+
+
+/* Support Section */
 
 .support {
     padding: 5rem 9%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1.7rem;
 }
 
 .support-icons {
@@ -565,8 +597,10 @@ outline-color: #d1c2f1;
 }
 
 .deal .content{
+    background-color: #f3f3f3;
     flex: 1 1 42rem;
     padding: 90px;
+    text-align: left;
 }
 
 .deal .content h3{
@@ -585,20 +619,19 @@ outline-color: #d1c2f1;
     color: var(--purple);
     font-size: 1.4rem;
     line-height: 2;
-    text-align: left;
 }
 
-.deal-btn {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.deal .content .deal-btn {
     display: inline-block;
-    padding: 1rem 1rem;
     background: #342161;
     color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: 500;
     text-decoration: none;
+    border-radius: 1rem;
+    padding: 6px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Reviews */
@@ -783,81 +816,6 @@ outline-color: #d1c2f1;
         top: 0;
         right: 10px;
         margin: 0;
-    }
-}
-
-/* Preloader */
-
-.preload {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(180deg, #31205a 0%, #2c1368 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease;
-}
-
-.cloud1, .cloud2, .cloud3 {
-    height: 100px;
-    position: absolute;
-    right: 0%;
-    z-index: -1;
-}
-
-.cloud1 {
-    top: 25%;
-    transform: translateX(100%, -25%);
-    animation: clouds 3s ease infinite;
-}
-
-.cloud2 {
-    top: 50%;
-    transform: translateX(100%, -50%);
-    animation: clouds 3s ease infinite 2s;
-}
-.cloud3 {
-    top: 25%;
-    transform: translateX(100%, -75%);
-    animation: clouds 3s ease infinite 1s;
-}
-
-.witch {
-    height: 200px;
-    animation: witch 1s ease infinite;
-}
-
-.preload h3 {
-    position: absolute;
-    top: 75%;
-    transform: translateY(-75%);
-    color: white;
-    font-family: 'Poppins';
-    font-size: 20px;
-}
-
-.preload-finish {
-    opacity: 0;
-    pointer-events: none;
-}
-
-@keyframes witch{
-    from{
-        transform: translateY(0px);
-    }
-    to{
-        transform: translateY(50px);
-    }
-}
-
-@keyframes clouds{
-    from{
-       right: 0%;
-    }
-    to{
-        right: 130%;
     }
 }
 

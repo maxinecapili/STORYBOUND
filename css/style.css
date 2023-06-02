@@ -2,6 +2,7 @@
 
 :root{
     --dark-purple: #4e348a;
+    --light-purple: #b9a0f3;
     --purple: #9f79f8;
     --violet: #c6b1f8;
     --black: #000000;
@@ -22,11 +23,25 @@
     transition: width none;
 }
 
+::-webkit-scrollbar{
+    width:15px
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#a27cfc, #c6b1f8);
+    border-radius: 10px;
+}
+
 html{
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
+
 
 body {
     min-height: 100vh;
@@ -46,7 +61,7 @@ header {
 }
 
 .bgColor{
-    background: #342161;    
+    background: var(--dark-purple);    
 }
 
 .logo-container {
@@ -483,7 +498,7 @@ header {
 
 .deal .content p {
     padding: 1rem 0;
-    color: var(--purple);
+    color: var(--grey);
     font-size: 1.4rem;
     line-height: 2;
 }
@@ -574,7 +589,7 @@ header {
 
 .footer-area {
     padding: 100px 0 60px;
-    background: #342161;
+    background: var(--dark-purple);
     color:#fff;
     position:relative;
   }
@@ -616,7 +631,6 @@ header {
 }
 
 .col-footer h4 {
-    text-transform: capitalize;
     font-size: 22px;
     margin-bottom: 20px;
 }
@@ -633,7 +647,6 @@ header {
 
 .col-footer ul li a {
     color: #fff;
-    text-transform: capitalize;
     text-decoration: none;
 }
 
@@ -645,76 +658,7 @@ header {
 
 .copyright p{
     text-align: center;
-    text-transform: capitalize;
     margin-top: 50px;
-}
-
-/* Media Queries */
-
-@media only screen and (max-width: 900px) {
-    header{
-        flex-direction: column;
-    }
-
-    .wrapper{
-        width: 80%;
-    }
-
-    .row{
-        flex-direction: column;
-      }
-    .col{
-        width: 100%;
-        text-align: left;
-        margin-bottom: 25px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    
-    .wrapper{
-        width: 80%;
-        flex-direction: column-reverse;
-    }
-    .column{
-        width: 100%;
-    }
-    .close{
-        top: 0;
-        right: 10px;
-        margin: 0;
-    }
-}
-
-::-webkit-scrollbar{
-    width:15px
-}
-
-::-webkit-scrollbar-track{
-    background: #d1e5ff;
-}
-
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(#a27cfc, #c6b1f8);
-    border-radius: 10px;
-}
-
-.pages-hero {
-        position: relative;
-        width: 100%; 
-        height: 70vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: url("/img/page-banner1.jpg");
-        background-size: cover;
-        background-position: center;
-}
-
-.pages-hero h1{
-    font-size: 50px;
-    color: #ffffff;
 }
 
 /* Account Page */
@@ -722,7 +666,7 @@ header {
 .account-container {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--light-purple);
     min-height: 100vh;
     overflow: hidden;
 }
@@ -745,7 +689,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     z-index: 5;
-  }
+}
   
 form {
     display: flex;
@@ -770,7 +714,7 @@ form.sign-in-form {
   
 .title {
     font-size: 2.2rem;
-    color: #444;
+    color: var(--dark-purple);
     margin-bottom: 10px;
 }
   
@@ -840,7 +784,7 @@ form.sign-in-form {
     border-color: var(--dark-purple);
 }
   
-.btn {
+.account-btn {
     width: 150px;
     background-color: var(--dark-purple);
     border: none;
@@ -855,8 +799,9 @@ form.sign-in-form {
     transition: 0.5s;
 }
   
-.btn:hover {
-    background-color: var(--violet);
+.account-btn:hover {
+    background-color: var(--white);
+    color: var(--dark-purple);
 }
 
 .panels-container {
@@ -881,8 +826,7 @@ form.sign-in-form {
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
-  }
-  
+}
   
 .panel {
     display: flex;
@@ -921,7 +865,7 @@ form.sign-in-form {
     padding: .5rem;
 }
   
-.btn.transparent {
+.account-btn.transparent {
     margin: 0;
     background: none;
     border: 2px solid #fff;
@@ -929,6 +873,12 @@ form.sign-in-form {
     height: 41px;
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+.account-btn.transparent:hover {
+    background-color: var(--white);
+    border: var(--white);
+    color: black;
 }
   
 .right-panel .image, .right-panel .content {
@@ -940,7 +890,7 @@ form.sign-in-form {
     right: 52%;
 }
   
-.account-container.sign-up-mode .left-panel .image, .account-container.sign-up-mode .left-panel .content {
+.account-container.sign-up-mode .left-panel .content {
     transform: translateX(-800px);
   }
   
@@ -958,7 +908,7 @@ form.sign-in-form {
     z-index: 1;
 }
   
-.account-container.sign-up-mode .right-panel .image, .account-container.sign-up-mode .right-panel .content {
+.account-container.sign-up-mode .right-panel .content {
     transform: translateX(0%);
 }
   
@@ -969,7 +919,129 @@ form.sign-in-form {
 .account-container.sign-up-mode .right-panel {
     pointer-events: all;
 }
-  
+
+/* About Page */
+
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+
+.founders {
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.header {
+  padding-top: 30px;
+  color: #444;
+  font-size: 30px;
+  margin: auto;
+  line-height: 50px;
+}
+
+.sub-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teams {
+  margin: 10px;
+  padding: 22px;
+  max-width: 30%;
+  cursor: pointer;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.teams:hover {
+  background: #ddd;
+  border-radius: 12px;
+}
+
+.teams img {
+  width: 200px;
+  height: 200px;
+}
+
+.name {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.desig {
+  font-style: italic;
+  color: #888;
+}
+
+.about {
+  margin: 20px 0;
+  font-weight: lighter;
+  color: #4e4e4e;
+}
+
+.social-links {
+  margin: 14px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  transition: .4s;
+}
+
+.social-links a:hover {
+  transform: scale(1.5);
+}
+
+.social-links a i {
+  color: #444;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+    header{
+        flex-direction: column;
+    }
+
+    .wrapper{
+        width: 80%;
+    }
+
+    .row{
+        flex-direction: column;
+      }
+    .col{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .wrapper{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+    .column{
+        width: 100%;
+    }
+    .close{
+        top: 0;
+        right: 10px;
+        margin: 0;
+    }
+}
+
 @media (max-width: 870px) {
     .account-container {
       min-height: 800px;
@@ -1008,12 +1080,6 @@ form.sign-in-form {
       grid-row: 1 / 2;
     }
   
-    .image {
-      width: 200px;
-      transition: transform 0.9s ease-in-out;
-      transition-delay: 0.6s;
-    }
-  
     .panel .content {
       padding-right: 15%;
       transition: transform 0.9s ease-in-out;
@@ -1029,7 +1095,7 @@ form.sign-in-form {
       padding: 0.5rem 0;
     }
   
-    .btn.transparent {
+    .account-btn.transparent {
       width: 110px;
       height: 35px;
       font-size: 0.7rem;
@@ -1052,18 +1118,12 @@ form.sign-in-form {
       right: initial;
     }
   
-    .account-container.sign-up-mode .left-panel .image,
     .account-container.sign-up-mode .left-panel .content {
       transform: translateY(-300px);
     }
   
-    .account-container.sign-up-mode .right-panel .image,
     .account-container.sign-up-mode .right-panel .content {
       transform: translateY(0px);
-    }
-  
-    .right-panel .image, .right-panel .content {
-      transform: translateY(300px);
     }
   
     .account-container.sign-up-mode .signin-signup {
@@ -1072,17 +1132,15 @@ form.sign-in-form {
     }
   }
   
-  @media (max-width: 570px) {
+@media (max-width: 570px) {
     form {
       padding: 0 1.5rem;
     }
   
-    .image {
-      display: none;
-    }
     .panel .content {
       padding: 0.5rem 1rem;
     }
+
     .account-container {
       padding: 1.5rem;
     }
@@ -1096,5 +1154,11 @@ form.sign-in-form {
       bottom: 28%;
       left: 50%;
     }
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .teams {
+        max-width: 100%;
+    }
+}
 

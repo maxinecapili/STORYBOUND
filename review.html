@@ -1,33 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews</title>
-
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STORYBOUND | Review</title>
+        <link rel="icon" href="img/book-logo.png" type="image">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
 	<style>
-
-body {
-	font-family: Arial, sans-serif;
-          background-color: #824cff;
-          color: white;
-}
-
-.back-button {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background-color: #ffffff;
-        color: #824cff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
 
 .comment-box {
 	top: 50%;
@@ -84,10 +65,30 @@ body {
 </head>
 <body>
 
-	    <!-- Add the back button to the HTML -->
-		<a href="index.html" class="back-button">Back</a>
+	<header>
+            
+		<div class="logo-container">
+			<img src="img/book-logo.png" alt="book-logo">
+			<a href="#" class="logo">STORYBOUND</a>
+		</div>
 
-	<div class="comment-box">
+		<nav class="nav">
+			<a href="index.html">Home<span></span></a>
+			<a href="about.html">About<span></span></a>
+			<a href="shop.html">Shop<span></span></a>
+			<a href="review.html">Review<span></span></a>
+			<a href="contact.html">Contact<span></span></a>
+		</nav>
+
+		<div class="header-icons">
+				<a href="search.html"><i class="fa fa-search"></i></a>
+				<a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+				<a href="wishlist.html"><i class="fa fa-heart"></i></a>
+				<a href="account.html" class="login-btn">Sign In</a>
+		</div>
+	</header>
+
+	<section class="comment-box">
 		<h2>Comments</h2>
 		<form action="#"> 
 		<input type="text" name="full_name" placeholder="Full Name...">
@@ -95,6 +96,53 @@ body {
 		<textarea name="comment" placeholder="Type Your Comments..."></textarea>
 		<button type="submit">Submit Review</button>
 		</form>
-	</div>
+	</section>
+
+	<footer class="footer-area">
+		<div class="footer">
+			<div class="col-footer">
+				<h4>STORYBOUND</h4>
+				<p>We are an online bookstore that offers an extensive collection of books designed to meet diverse interests and preferences.</p>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="col-footer">
+				<h4>Main Menu</h4>
+				<ul>
+					<li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+					<li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+					<li><a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+					<li><a href="review.html"><i class="fas fa-chevron-right"></i> Review</a></li>
+					<li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-footer">
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+					<li><a href="privacypolicy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+					<li><a href="terms&conditions.html"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+				</ul>
+			</div>
+			<div class="col-footer">
+				<h4>Contact us</h4>
+				<ul>
+					<li><a href=""><i class="fa fa-location-arrow"></i>Pampanga, Philippines</a></li>
+					<li><a href=""><i class="fas fa-mobile-alt"></i> +69 0123 456 789</a></li>
+					<li><a href=""><i class="far fa-envelope"></i> support@storybound.com</a></li>
+					<li><a href=""><i class="fas fa-globe-europe"></i> www.storybound.com</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<p>STORYBOUND COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.</p>
+		</div>
+</footer>
+
+
 </body>
 </html>

@@ -966,15 +966,16 @@ form.sign-in-form {
     pointer-events: none;
   }
   
-  .account-container.sign-up-mode .right-panel {
+.account-container.sign-up-mode .right-panel {
     pointer-events: all;
-  }
+}
   
-  @media (max-width: 870px) {
+@media (max-width: 870px) {
     .account-container {
       min-height: 800px;
       height: 100vh;
     }
+    
     .signin-signup {
       width: 100%;
       top: 95%;
@@ -1097,87 +1098,3 @@ form.sign-in-form {
     }
   }
 
-
-  .pqs {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.cart {
-			padding: 15px 10px;
-			height: 30px;
-			cursor: pointer;
-			margin: 5px;
-			margin-left: .9rem;
-			display: flex;
-			align-content: center;
-			align-items: center;
-			text-align: center;
-			background: #3f2874;
-			border-radius: 10px;
-			color: white;
-			font-size: 15px;
-			flex-wrap: wrap;
-		}
-        
-		table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-		.cart-info{
-            display: flex;
-            flex-wrap: wrap;
-			
-        }
-
-		.cart-info {
-            margin-top: 1rem;
-        }
-
-		.cart-info h3{
-            padding: 1rem;
-        }
-
-		.cart-info p{
-            padding: 1rem;
-        }
-        
-		th{
-            text-align: left;
-            padding: 5px;
-            color: #fff;
-            background: #3f2874;
-            font-weight: normal;
-        }
-        
-		td{
-            padding: 10px ;
-        }
-
-        td input{
-            width: 40px;
-            height: 30px;
-            padding: 5px;
-            background: rgba(255, 255, 255, 0.5);
-        }
-        
-		.total-price{
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-		.total-price table{
-            border-top: 3px solid #3f2874;
-            width: 100%;
-            max-width: 20%;
-			
-        }
-        
-		td:last-child{
-            text-align: right;
-        }
-        
-		th:last-child{
-            text-align: right;
-        }

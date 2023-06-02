@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
 
     <style>
-      section {
-			font-family: Poppins, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-		}
-
       .heading {
           font-size: 2.5rem;
           font-weight: bold;
@@ -40,21 +34,87 @@
       }
 
     .founders {
-        position: relative;
-        width: 100%; 
-    }
-
-    .founders .box {
-        width: 25rem;
-        margin: 2rem 0;
-        position: relative;
-        overflow: hidden;
-        border: var(--border);
         text-align: center;
+        background: #f5f5f5;
     }
 
-    .founders .people img {
-        height: 25rem;
+    .header {
+        padding-top: 30px;
+        color: #444;
+        font-size: 20px;
+        margin: auto;
+        line-height: 50px;
+    }
+
+    .sub-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .teams {
+        margin: 10px;
+        padding: 22px;
+        max-width: 30%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+    }
+
+    .teams:hover {
+        background: #ddd;
+        border-radius: 12px;
+    }
+
+    .teams img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        padding: 12px;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .desig {
+        font-style: italic;
+        color: #888;
+    }
+
+    .about {
+        margin: 20px 0;
+        font-weight: lighter;
+        color: #4e4e4e;
+    }
+
+    .social-links {
+        margin: 14px;
+    }
+
+    .social-links a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        transition: .4s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.5);
+    }
+
+    .social-links a i {
+        color: #444;
+    }
+
+    @media screen and (max-width: 600px) {
+        .teams {
+            max-width: 100%;
+        }
     }
   </style>
 
@@ -94,38 +154,111 @@
 	</section>
 
     <section class="about">
-        <h1 class="heading">About Us</h1>
-        <p>Welcome to STORYBOUND, where we use technology and the internet to connect readers with quality books. Our mission is to foster a community of passionate readers and writers, and our vision is to make reading a part of modern life. Join us and discover your next great read!</p>
-        <h3>Vision</h3>
-        <p>Our vision is to utilize the internet to make books easily accessible in the modern era, while upholding the tradition of reading. We aim to promote a culture of continuous learning and enlightenment through the latest technology.</p>
-        <h3>Mission</h3>
-        <p>Our mission is to provide easy access to a vast collection of books through the internet, while enhancing the reading experience with modern features, to foster a culture of lifelong learning and enlightenment.</p>
+        <div class="about-1">
+            <h1 class="heading">About Us</h1>
+            <p>Welcome to STORYBOUND, where we use technology and the internet to connect readers with quality books. Our mission is to foster a community of passionate readers and writers, and our vision is to make reading a part of modern life. Join us and discover your next great read!</p>
+        </div>
+        
+        <div class="about-2">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            
+                            <div class="about-item text-center">
+                                <i class="fa fa-rocket"></i>
+                                <h3>MISSION</h3>
+                                <hr>
+                                <p>Our mission is to provide easy access to a vast collection of books through the internet, while enhancing the reading experience with modern features, to foster a culture of lifelong learning and enlightenment.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            
+                            <div class="about-item text-center">
+                                <i class="fa fa-rocket"></i>
+                                <h3>VISION</h3>
+                                <hr>
+                                <p>Our mission is to provide easy access to a vast collection of books through the internet, while enhancing the reading experience with modern features, to foster a culture of lifelong learning and enlightenment.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            
+                            <div class="about-item text-center">
+                                <i class="fa fa-rocket"></i>
+                                <h3>ACHIEVEMENT</h3>
+                                <hr>
+                                <p>Our mission is to provide easy access to a vast collection of books through the internet, while enhancing the reading experience with modern features, to foster a culture of lifelong learning and enlightenment.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>  
+            </div>
+        </div>
     </section>
+
 
     <section class="founders">
-        <h3>Founders</h3>
+        <div class="header">
+            <h1>Our Team</h1>
+        </div>
+        <div class="sub-container">
+            <div class="teams">
+                <img src="img/people-1.jpg" alt="">
+                <div class="name">Esmay Stace</div>
+                <div class="desig">Developer</div>
+                <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum labore quam
+                    reprehenderit
+                    vitae aliquam dicta! </div>
 
-        <div class="box">
-            <div class="people">
-                <img src="img/book-1.jpg" alt="">
-                <div class="content">
-                    <h3>Leni Robredo</h3>
-                    <p>Chief Executive Officer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="teams">
+                <img src="img/people-2.jpg" alt="">
+                <div class="name">Cloe Cisneros </div>
+                <div class="desig">Designer</div>
+                <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum labore quam
+                    reprehenderit
+                    vitae aliquam dicta! </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="teams">
+                <img src="img/people-3.jpg" alt="">
+                <div class="name">Sanjay Mullen </div>
+                <div class="desig">Manager</div>
+                <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum labore quam
+                    reprehenderit
+                    vitae aliquam dicta! </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
                 </div>
             </div>
         </div>
-
-        <div class="box">
-            <div class="people">
-                <img src="img/book-2.jpg" alt="">
-                <div class="content">
-                    <h3>Cynthia Villar</h3>
-                    <p>Fertilizer</p>
-                </div>
-            </div>
-        </div>
-
     </section>
+
 
 <footer class="footer-area">
     <div class="footer">
@@ -173,5 +306,7 @@
     </div>
 </footer>
 
+<!--Custom JS file link-->
+<script src="js/script.js"></script>
 </body>
 </html>

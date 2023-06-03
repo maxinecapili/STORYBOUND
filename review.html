@@ -439,7 +439,25 @@
 			  <a href="#" class="cart">add to cart</a>
 		   </div>
 		</div>
-	 
+		<script src="js/rating.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<?php include('inc/container.php');?>
+		<div class="container">		
+			<h2>Example: Star Rating System with Ajax, PHP and MySQL</h2>
+			
+			<div class="row">
+				<div class="col-sm-2" style="width:150px">
+					<img class="product_image" src="image/<?php echo $item["image"]; ?>" style="width:100px;height:200px;padding-top:10px;">
+				</div>
+				<div class="col-sm-4">
+				<h4 style="margin-top:10px;"><?php echo $item["name"]; ?></h4>
+				<div><span class="average"><?php printf('%.1f', $average); ?> <small>/ 5</small></span> <span class="rating-reviews"><a href="show_rating.php?item_id=<?php echo $item["id"]; ?>">Rating & Reviews</a></span></div>
+				<?php echo $item["description"]; ?>		
+				</div>		
+			</div>
+		
+		</div>	
+		</div>	
 	 </div>
 	<!-- 
 	<section class="comment-box">

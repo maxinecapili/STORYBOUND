@@ -59,76 +59,26 @@
 <body>
 
     <header>
-            
         <div class="logo-container">
-            <img src="img/book-logo.png" alt="book-logo">
-            <a href="#" class="logo">STORYBOUND</a>
+          <img src="img/book-logo.png" alt="book-logo">
+          <a href="#" class="logo">STORYBOUND</a>
         </div>
-
-        <nav class="nav">
-            <a href="#">Home<span></span></a>
-            <a href="about.html">About<span></span></a>
-            <a href="shop.html">Shop<span></span></a>
-            <a href="review.html">Review<span></span></a>
-            <a href="contact.html">Contact<span></span></a>
-            <a href="genre.html">Genre<span></span></a>
-        </nav>
-
-        <div class="header-icons">
-                <a href="#"><i class="fa fa-search"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
-                <a href="#popup" class="trigger">Sign In</a>
-            <div id="popup" class="overlay">
-                <div class="wrapper">
-                    <a href="#" class="close">&times;</a>
-                    
-                    <div class="column details">
-                            
-                        <div class="signin">
-                            <h1>Sign In</h1>
-                                <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Password">
-                                <a href="#">Forgot Password?</a>
-                                <button class="form-submit">Sign In</button>
-                            <span>You don't have an account yet? <button id="signup">Create now</button></span>
-                        </div>
-        
-                        <div class="signup">
-                            <h1>Sign Up</h1>
-                            <input type="email" placeholder="Email">
-                            <input type="create-password" placeholder="Create Password">
-                            <input type="confirm-password" placeholder="Confirm Password">
-                            <button class="form-submit">Sign Up</button><span>Already have an account? <button id="signin">Sign In</button></span>
-                        </div>
-        
-                    </div>
-
-                    <div class="column content">
-                        <div class="signin">
-                            <h1>Welcome Back!</h1>
-                            <p>To keep connected with us please login with your account</p>
-                        </div>
-        
-                        <div class="signup">
-                            <h1>Hello, Friend!</h1>
-                            <p>Enter your personal details and start journey with us</p>
-                        </div>
-                    </div>
-                </div>
-        </div>      
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>   
-            <script type="text/javascript"> $('.signup').hide();
     
-                $('#signin, #signup').on(
-                    'click',
-                    function(){
-                        $('.signin, .signup').toggle();
-                    }
-                );
-            </script> 
+        <nav class="nav">
+          <a href="index.html">Home<span></span></a>
+          <a href="about.html">About<span></span></a>
+          <a href="shop.html">Shop<span></span></a>
+          <a href="review.html">Review<span></span></a>
+          <a href="contact.html">Contact<span></span></a>
+        </nav>
+    
+        <div class="header-icons">
+            <a href="search.html"><i class="fa fa-search"></i></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+            <a href="account.html" class="login-btn">Sign In</a>
         </div>
-    </header>
+      </header>
 
     <section class="pages-hero">
 		<div class="heart">

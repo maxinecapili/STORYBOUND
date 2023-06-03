@@ -325,7 +325,7 @@ header {
     height: 25rem;
 }
 
-.featured .featured-slider .box .icons {
+.featured .featured-slider .box .featured-icons {
     border-bottom: var(--border-hover);
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -334,17 +334,17 @@ header {
     transform: translateY(-100%);
 }
 
-.featured .featured-slider .box:hover .icons {
+.featured .featured-slider .box:hover .featured-icons {
     transform: translateY(0%);
 }
 
-.featured .featured-slider .box .icons a {
+.featured .featured-slider .box .featured-icons a {
     color: var(--black);
     font-size: 2.2rem;
     padding: 1.3rem 1.5rem;
 }
 
-.featured .featured-slider .box .icons a:hover{
+.featured .featured-slider .box .featured-icons a:hover{
     background: var(--violet);
     font-size: 2.2rem;
     margin: 1.5rem;
@@ -369,6 +369,7 @@ header {
 .featured .featured-slider .box .content .price span{
     font-size: 1.5rem;
     color: var(--grey);
+    background-color: transparent;
     text-decoration: line-through;
 }
 
@@ -661,6 +662,146 @@ header {
     margin-top: 50px;
 }
 
+/* Shop Page */
+
+.shop-hero{
+    line-height: 1.5;
+}
+
+.shop-bg{
+    height: 100vh;
+    background: linear-gradient(var(--purple), var(--violet)), url(image/contact-bg.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shop-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.shop-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: var(--dark-purple);
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: var(--dark-purple);
+    border-radius: 50%;
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+
+.shop-section{
+	padding: 8rem 0;
+}
+
+.blog-sidebar-title{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.blog-sidebar-list{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.blog-sidebar-text{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.blog-form{
+	background-color: #F4F4F4; 
+	padding: 50px;
+	height: 1000px;
+}
+
+.list-icon{
+	color: #c0aa83;
+}
+
+.tags{
+	color: #242424;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.tags{
+	color: #242424;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+
+.product-sidebar-list{
+	color: #242424;
+}
+
+.product-sidebar-list:hover{
+	color: #c0aa83;
+}
+
+.card-title{
+	color: #c0aa83;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.card-text{
+	font-size: 13px;
+}
+
+.price-tag{
+	color: #c0aa83;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.button-text{
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.product-image{
+	width: 200px;
+	height: 200px;
+}
+
 /* Account Page */
 
 .account-container {
@@ -941,30 +1082,28 @@ form.sign-in-form {
     background: url("/img/book-logo.png") center/cover no-repeat;
 }
 
-.content{
+.about-us .content{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.content h1{
-    text-transform: uppercase;
+
+.about-us .content h1{
     font-size: 36px;
-    letter-spacing: 6px;
-    opacity: 0.9;
 }
-.content span{
+
+.about-us .content span{
     height: 0.5px;
     width: 80px;
-    background: #777;
+    background: var(--violet);
     margin: 30px 0;
 }
-.content p{
+.about-us .content p{
     padding-bottom: 15px;
-    font-weight: 300;
     opacity: 0.7;
     width: 60%;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     line-height: 1.7;
 }
@@ -973,6 +1112,7 @@ form.sign-in-form {
     display: flex;
     padding: 15px 0;
 }
+
 .icons li{
     display: block;
     padding: 5px;
@@ -1190,6 +1330,7 @@ form.sign-in-form {
 .contact-bg .text{
     margin: 1.6rem 0;
 }
+
 .contact-body{
     max-width: 1320px;
     margin: 0 auto;
@@ -1377,6 +1518,7 @@ form.sign-in-form {
       padding-right: 15%;
       transition: transform 0.9s ease-in-out;
       transition-delay: 0.8s;
+      
     }
   
     .panel h3 {

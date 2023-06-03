@@ -323,7 +323,7 @@
 		<div class="preview" data-target="p-1">
 		   <i class="fas fa-times"></i>
 		   <img src="img/book-1.jpg" alt="">
-		   <h3>The Hunger Games</h3>
+		   <h3>The Hunger Games   </h3>
 		   <div class="stars">
 			  <i class="fas fa-star"></i>
 			  <i class="fas fa-star"></i>
@@ -499,27 +499,27 @@
 
 <script>
 	let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
+	let previewBox = preveiwContainer.querySelectorAll('.preview');
 
-document.querySelectorAll('.products-container .product').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
-      }
-    });
-  };
-});
+	document.querySelectorAll('.products-container .product').forEach(product =>{
+	product.onclick = () =>{
+		preveiwContainer.style.display = 'flex';
+		let name = product.getAttribute('data-name');
+		previewBox.forEach(preview =>{
+		let target = preview.getAttribute('data-target');
+		if(name == target){
+			preview.classList.add('active');
+		}
+		});
+	};
+	});
 
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
-    close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
-  };
-});
+	previewBox.forEach(close =>{
+	close.querySelector('.fa-times').onclick = () =>{
+		close.classList.remove('active');
+		preveiwContainer.style.display = 'none';
+	};
+	});
 </script>
 </body>
 </html>

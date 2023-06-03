@@ -7,213 +7,247 @@
         <title>STORYBOUND | Shop</title>
         <link rel="icon" href="img/book-logo.png" type="image">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
     </head>
-  <style>
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    h2 {
-      text-align: center;
-      color: black;
-    }
-
-    h3 {
-      text-align: center;
-      color: black;
-    }
-
-    body {
-			background-image: linear-gradient(#3f2874,#6e07696f ),url('img/background.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-		}
-
-    #page-wrap {
-            position: relative;
-            z-index: 2;
-            width: 80%;
-            border-radius: 15px;
-            margin: 50px auto;
-            margin-top: 200px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.397); /* Updated background with 30% transparency */
-            box-shadow: 0 0 20px black;
-        }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 20px;
-      margin-top: 20px;
-      text-align: center;
-    }
-    
-    .product-card {
-      border: 1px solid #000000;
-      padding: 10px;
-    }
-    
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    .product-card h3 {
-      margin-top: 10px;
-    }
-    
-    .product-card p {
-      margin: 5px 0;
-    }
-    
-    .add-to-cart {
-      text-align: center;
-      margin-top: 10px;
-    }
-    
-    .shopping-cart {
-      text-align: right;
-      margin-top: 20px;
-    }
-    
-    .filters {
-      margin-top: 20px;
-    }
-    
-    .filters select {
-      padding: 5px;
-      margin-right: 10px;
-    }
-    
-    .search-bar {
-      margin-top: 20px;
-      text-align: center;
-    }
-    
-    .search-bar input[type="text"] {
-      padding: 5px;
-      width: 200px;
-    }
-    
-    .payment-options {
-      margin-top: 20px;
-      text-align: center;
-    }
-    
-    .shipping-info {
-      margin-top: 20px;
-    }
-    
-    .customer-support {
-      margin-top: 20px;
-      text-align: center;
-      
-    }
-  </style>
 </head>
 <body>
 
   <header>
-            
     <div class="logo-container">
-        <img src="img/book-logo.png" alt="book-logo">
-        <a href="#" class="logo">STORYBOUND</a>
+      <img src="img/book-logo.png" alt="book-logo">
+      <a href="#" class="logo">STORYBOUND</a>
     </div>
 
     <nav class="nav">
-        <a href="index.html">Home<span></span></a>
-        <a href="about.html">About<span></span></a>
-        <a href="shop.html">Shop<span></span></a>
-        <a href="review.html">Review<span></span></a>
-        <a href="contact.html">Contact<span></span></a>
+      <a href="index.html">Home<span></span></a>
+      <a href="about.html">About<span></span></a>
+      <a href="shop.html">Shop<span></span></a>
+      <a href="review.html">Review<span></span></a>
+      <a href="contact.html">Contact<span></span></a>
     </nav>
 
     <div class="header-icons">
-            <a href="search.html"><i class="fa fa-search"></i></a>
-            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
-            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
-            <a href="account.html" class="login-btn">Sign In</a>
-    
+        <a href="search.html"><i class="fa fa-search"></i></a>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+        <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+        <a href="account.html" class="login-btn">Sign In</a>
+    </div>
   </header>
-  <div id="page-wrap">
-  <div class="container">
-    <h2>Welcome to our Shop</h2>
-    
-    <div> 
-    <div class="filters">
-      <select>
-        <option value="">All Categories</option>
-        <option value="electronics">Electronics</option>
-        <option value="clothing">Clothing</option>
-        <option value="home">Home &amp; Kitchen</option>
-      </select>
-      <select>
-        <option value="">Sort By</option>
-        <option value="price">Price</option>
-        <option value="rating">Rating</option>
-      </select>
-    </div>
-    
-    <div class="search-bar">
-      <input type="text" placeholder="Search products...">
-      <button type="button">Search</button>
-    </div>
-  </div>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="img/book-99.jpg" alt="Product 1">
-        <h3>How to Think Like a Roman Emperor</h3>
-        <p>"How to Think Like a Roman Emperor" by Donald Robertson is a concise and practical guide that explores the wisdom of Stoicism through the life of Marcus Aurelius, the Roman Emperor.</p>
-        <p1>₱1,000</p1>
-        <div class="add-to-cart">
-          <button type="button">Add to Cart</button>
-        </div>
+
+  <section class = "shop-hero">
+    <div class = "shop-bg">
+      <h3>Get in Touch with Us</h3>
+      <h2>contact us</h2>
+      <div class = "line">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      
-      <div class="product-card">
-        <img src="img/book-100.jpg" alt="Product 2">
-        <h3>The Alchemist</h3>
-        <p>Paulo Coelho's "The Alchemist" is a captivating and inspiring novel that follows Santiago, a young shepherd, on a quest to discover his personal legend and the true meaning of life.</p>
-        <p1>₱1,000</p1>
-        <div class="add-to-cart">
-          <button type="button">Add to Cart</button>
-        </div>
-      </div>
-      
-      <!-- Add more product cards here -->
-    </div>
-    
-    <div class="shopping-cart">
-      <a href="cart.html">View Cart (0 items)</a>
-    </div>
-    
-    <div class="payment-options">
-      <p>Select a payment option:</p>
-      <input type="radio" id="credit-card" name="payment" value="credit-card">
-      <label for="credit-card">Credit Card</label>
-      
-      <input type="radio" id="paypal" name="payment" value="paypal">
-      <label for="paypal">PayPal</label>
-    </div>
-    
-    <div class="shipping-info">
-      <p>Shipping Information:</p>
-      <p>Free shipping on orders over ₱2,000</p>
-    </div>
-    
-    <div class="customer-support">
-      <p>For any questions or support, please contact us:</p>
-      <p>Phone: 0907-476-0746</p>
-      <p>Email: storyboundsupport@gmail.com</p>
-    </div>
+      <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste facilis quos impedit fuga nobis modi debitis laboriosam velit reiciendis quisquam alias corporis, maxime enim, optio ab dolorum sequi qui.</p>
   </div>
-</div>
+  <section class="shop-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-3 blog-form">
+					<h2 class="blog-sidebar-title"><b>Cart</b></h2>
+					<hr />
+					<p class="blog-sidebar-text">No products in the cart...</p>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<h2 class="blog-sidebar-title"><b>Categories</b></h2>
+					<hr />
+
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Coffee</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Green Coffee</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Nigerian</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Roasted Coffee</b></p>
+					<p class="blog-sidebar-list"><b><span class="list-icon"> > </span> Uncategorized</b></p>
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<h2 class="blog-sidebar-title"><b>Filter</b></h2>
+					<hr />
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Search" aria-label="Receipient's username" aria-describely="basic-addon2">
+						<div class="input-group-append">
+							<span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+						</div>
+						
+					</div>
+
+					<p class="tags">Price $4 - $25</p>
+					<button type="button" class="btn btn-dark btn-lg">Filter</button>
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<h2 class="blog-sidebar-title"><b>Tags</b></h2>
+					<p class="product-sidebar-list"><b>#accessory, #arabica</b></p>
+					<p class="product-sidebar-list"><b>#candy, #bean, #cup</b></p>
+					<p class="product-sidebar-list"><b>#ethopian, #latte</b></p>
+
+
+				</div>
+				<!--END  <div class="col-lg-3 blog-form">-->
+
+				<div class="col-lg-9" style="padding-left: 30px;">
+					<div class="row">
+						<div class="col">
+							Showing all 9 results
+						</div>
+
+						<div class="col">
+							<select class="form-control">
+								<option value="">Default Sorting</option>
+								<option value="popularity">Sorting by popularity</option>
+								<option value="average">Sorting by average</option>
+								<option value="latest">Sorting by latest</option>
+								<option value="low">Sorting by low</option>
+								<option value="high">Sorting by high</option>
+							</select>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="./img/book-1.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $25.16</p>
+									<a href="#" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="./img/book-2.jpg" class="product-image">
+									<h5 class="card-title"><b>Coffee Bank</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $16</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="./img/book-3.jpg" class="product-image">
+									<h5 class="card-title"><b>Latte Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $20</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="img/coffee_item7.jpg" class="product-image">
+									<h5 class="card-title"><b>Accessories</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $14.16</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="img/coffee_item4.jpg" class="product-image">
+									<h5 class="card-title"><b>Table Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $20.16</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="img/coffee_item5.jpg" class="product-image">
+									<h5 class="card-title"><b>Online Coffee</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $35.16</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+
+					<div class="row">
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="img/coffee_item1.jpg" class="product-image">
+									<h5 class="card-title"><b>Gold Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $16</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="img/coffee_item2.jpg" class="product-image">
+									<h5 class="card-title"><b>Lating Accessory</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $26</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-3 col-md-6 col-lg-4">
+							<div class="card">
+								<div class="card-body text-center">
+									<img src="img/coffee_item6.jpg" class="product-image">
+									<h5 class="card-title"><b>American Black Coffee</b></h5>
+									<p class="card-text small">With supporting text below as a natural lead-in to additional content.</p>
+									<p class="tags">Price $50</p>
+									<a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- Sorting by <div class="row"> -->
+
+
+				</div>
+				<!--END  <div class="col-lg-9">-->
+
+			</div>
+		</div>
+	</section>
 
     <footer class="footer-area">
       <div class="footer">

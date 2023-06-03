@@ -18,8 +18,28 @@ window.onscroll = function(){
     scroll1 = scroll2;
 }
 
+var swiper = new Swiper(".books-slider", {
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 1,
+        },
+    },
+});
+
 var swiper = new Swiper(".featured-slider", {
-    spaceBetween: 30,
+    spaceBetween: 100,
     loop:true,
     centeredSlides: true,
     autoplay: {
@@ -35,13 +55,13 @@ var swiper = new Swiper(".featured-slider", {
             slidesPerView: 1,
         },
         450: {
-        slidesPerView: 2,
+            slidesPerView: 2,
         },
         768: {
-        slidesPerView: 3,
+            slidesPerView: 3,
         },
         1024: {
-        slidesPerView: 4,
+            slidesPerView: 4,
         },
     },
 });
@@ -88,8 +108,5 @@ var swiper = new Swiper(".reviews-slider", {
     },
 });
 
-window.addEventListener('load', () =>{
-const preload = document.querySelector('.preload');
-preload.classList.add("preload-finish");
-});
+
 

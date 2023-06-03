@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Shop Now!</title>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STORYBOUND | Shop</title>
+        <link rel="icon" href="img/book-logo.png" type="image">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    </head>
   <style>
 
-    body
-    {
-        background-color: #824cff;
-    }
-
-    /* CSS styles for the shop section */
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
     }
-
-    .back-button {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background-color: #ffffff;
-        color: #824cff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
     
     h2 {
       text-align: center;
-      color: white;
+      color: black;
     }
 
     h3 {
       text-align: center;
-      color: white;
+      color: black;
     }
 
-    p {
-      color: white;
-    }
+    body {
+			background-image: linear-gradient(#3f2874,#6e07696f ),url('img/background.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
 
-    p1 {
-        font-size: xx-large;
-    }
-    
+    #page-wrap {
+            position: relative;
+            z-index: 2;
+            width: 80%;
+            border-radius: 15px;
+            margin: 50px auto;
+            margin-top: 200px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.397); /* Updated background with 30% transparency */
+            box-shadow: 0 0 20px black;
+        }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -58,7 +55,7 @@
     }
     
     .product-card {
-      border: 1px solid #ddd;
+      border: 1px solid #000000;
       padding: 10px;
     }
     
@@ -122,11 +119,33 @@
 </head>
 <body>
 
-    <a href="index.html" class="back-button">Back</a>
+  <header>
+            
+    <div class="logo-container">
+        <img src="img/book-logo.png" alt="book-logo">
+        <a href="#" class="logo">STORYBOUND</a>
+    </div>
 
+    <nav class="nav">
+        <a href="index.html">Home<span></span></a>
+        <a href="about.html">About<span></span></a>
+        <a href="shop.html">Shop<span></span></a>
+        <a href="review.html">Review<span></span></a>
+        <a href="contact.html">Contact<span></span></a>
+    </nav>
+
+    <div class="header-icons">
+            <a href="search.html"><i class="fa fa-search"></i></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+            <a href="account.html" class="login-btn">Sign In</a>
+    
+  </header>
+  <div id="page-wrap">
   <div class="container">
     <h2>Welcome to our Shop</h2>
     
+    <div> 
     <div class="filters">
       <select>
         <option value="">All Categories</option>
@@ -145,7 +164,7 @@
       <input type="text" placeholder="Search products...">
       <button type="button">Search</button>
     </div>
-    
+  </div>
     <div class="product-grid">
       <div class="product-card">
         <img src="img/book-99.jpg" alt="Product 1">
@@ -194,5 +213,54 @@
       <p>Email: storyboundsupport@gmail.com</p>
     </div>
   </div>
+</div>
+
+    <footer class="footer-area">
+      <div class="footer">
+        <div class="col-footer">
+          <h4>STORYBOUND</h4>
+          <p>We are an online bookstore that offers an extensive collection of books designed to meet diverse interests and preferences.</p>
+          <div class="social">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-footer">
+          <h4>Main Menu</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+            <li><a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+            <li><a href="review.html"><i class="fas fa-chevron-right"></i> Review</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-footer">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+            <li><a href="privacypolicy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+            <li><a href="terms&conditions.html"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-footer">
+          <h4>Contact us</h4>
+          <ul>
+            <li><a href=""><i class="fa fa-location-arrow"></i>Pampanga, Philippines</a></li>
+            <li><a href=""><i class="fas fa-mobile-alt"></i>+69 0123 456 789</a></li>
+            <li><a href=""><i class="far fa-envelope"></i>support@storybound.com</a></li>
+            <li><a href=""><i class="fas fa-globe-europe"></i>www.storybound.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>STORYBOUND COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+
+    <!--Custom JS file link-->
+    <script src="js/script.js"></script>
 </body>
 </html>

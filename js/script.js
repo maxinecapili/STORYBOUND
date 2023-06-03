@@ -7,6 +7,14 @@ window.addEventListener('scroll', function () {
     }
 })
 
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav a', 'header-icons a').forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+    console.log(link);
+  }
+})
+
 var scroll1 = window.pageYOffset;
 window.onscroll = function(){
     var scroll2 = window.pageYOffset;
@@ -108,26 +116,4 @@ var swiper = new Swiper(".reviews-slider", {
     },
 });
 
-let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
-
-document.querySelectorAll('.products-container .product').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
-      }
-    });
-  };
-});
-
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
-    close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
-  };
-});
 

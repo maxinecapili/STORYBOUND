@@ -1524,35 +1524,145 @@ form.sign-in-form {
  
  .products-preview .preview{
     display: none;
-    padding:2rem;
+    padding: 2rem;
     text-align: center;
     background: #fff;
     position: relative;
-    margin:2rem;
-    width: 40rem;
+    margin: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 5px;
  }
  
  .products-preview .preview.active{
     display: inline-block;
  }
  
- .products-preview .preview img{
-    height: 30rem;
- }
- 
- .products-preview .preview .fa-times{
+.products-preview .preview .fa-times{
     position: absolute;
     top:1rem; right:1.5rem;
     cursor: pointer;
     color:#444;
-    font-size: 4rem;
- }
+    font-size: 2rem;
+}
  
- .products-preview .preview .fa-times:hover{
+.products-preview .preview .fa-times:hover{
     transform: rotate(90deg);
- }
+}
  
- .products-preview .preview h3{
+.prev-wrapper{
+    min-width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+
+.prev-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;   
+    background-color: blue;
+}
+
+.prev-showcase img{
+    min-width: 100%;
+}
+
+.prev-wrap .prev-content{
+    background-color: white;
+}
+
+.prev-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 0.5rem 0;
+}
+
+.author{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: var(--dark-purple);
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+.product-rating{
+    color: #ffc107;
+}
+
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+
+.prev-price{
+    font-size: 5px;
+}
+
+.prev-price span{
+    color: var(--dark-purple);
+    text-decoration: line-through;
+}
+
+.prev-detail .prev-desc{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.prev-detail{
+    opacity: 0.8;
+    font-size: 1rem;
+    text-align: justify;
+    padding-right: 2.2rem;
+}
+
+.prev-info{
+    margin: 1.5rem 0;
+}
+
+.prev-info input, .prev-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.prev-info input{
+    width: 60px;
+}
+
+.prev-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+
+.prev-info .btn:first-of-type{
+    background: var(--dark-purple);
+}
+
+.prev-info .btn:last-of-type{
+    background: var(--purple);
+}
+
+.prev-info .btn:hover{
+    opacity: 0.9;
+}
+ 
+.products-preview .preview h3{
     color:#444;
     padding:.5rem 0;
     font-size: 2.5rem;
@@ -1620,9 +1730,11 @@ form.sign-in-form {
      padding:15px 15px 20px 15px;
      border-radius:3px;
  }
+
  .bold{
      font-weight:700;
  }
+
  .padding-bottom-7{
      padding-bottom:7px;
  }
@@ -1634,170 +1746,58 @@ form.sign-in-form {
      border-radius:3px;
      margin-bottom:15px;
  }
+ 
+ /* Create two unequal columns that floats next to each other */
+.review-block .col {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+.review-block .left {
+    width: 25%;
+  }
+  
+  .review-block ..right {
+    width: 75%;
+  }
+  
+  /* Clear floats after the columns */
+  .review-block .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
  .review-block-name{
      font-size:12px;
      margin:10px 0;
  }
+
  .review-block-date{
      font-size:12px;
  }
+
  .review-block-rate{
      font-size:13px;
      margin-bottom:15px;
  }
+
  .review-block-title{
      font-size:15px;
      font-weight:700;
      margin-bottom:10px;
  }
+
  .review-block-description{
      font-size:13px;
  }
- .average {
-     background-color:#388e3c;
-     line-height: normal;
-     display: inline-block;
-     color: #fff;
-     padding: 2px 4px 2px 6px;
-     border-radius: 3px;
-     font-weight: 500;
-     font-size: 12px;
-     vertical-align: middle;
- }
- 
- .rating-reviews {
-         padding-left: 8px;
-     font-weight: 500;
-     color: #878787;
- }
- 
- .loginmodal-container {
-     padding: 30px;
-     max-width: 350px;
-     width: 100% !important;
-     background-color: #F7F7F7;
-     margin: 0 auto;
-     border-radius: 2px;
-     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-     overflow: hidden;
-     font-family: roboto;
-   }
-   
-   .loginmodal-container h1 {
-     text-align: center;
-     font-size: 1.8em;
-     font-family: roboto;
-   }
-   
-   .loginmodal-container input[type=submit] {
-     width: 100%;
-     display: block;
-     margin-bottom: 10px;
-     position: relative;
-   }
-   
-   .loginmodal-container input[type=text], input[type=password] {
-     height: 44px;
-     font-size: 16px;
-     width: 100%;
-     margin-bottom: 10px;
-     -webkit-appearance: none;
-     background: #fff;
-     border: 1px solid #d9d9d9;
-     border-top: 1px solid #c0c0c0;
-     /* border-radius: 2px; */
-     padding: 0 8px;
-     box-sizing: border-box;
-     -moz-box-sizing: border-box;
-   }
-   
-   .loginmodal-container input[type=text]:hover, input[type=password]:hover {
-     border: 1px solid #b9b9b9;
-     border-top: 1px solid #a0a0a0;
-     -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-     box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-   }
-   
-   .loginmodal {
-     text-align: center;
-     font-size: 14px;
-     font-family: 'Arial', sans-serif;
-     font-weight: 700;
-     height: 36px;
-     padding: 0 8px;
-   /* border-radius: 3px; */
-   /* -webkit-user-select: none;
-     user-select: none; */
-   }
-   
-   .loginmodal-submit {
-     /* border: 1px solid #3079ed; */
-     border: 0px;
-     color: #fff;
-     text-shadow: 0 1px rgba(0,0,0,0.1); 
-     background-color: #4d90fe;
-     padding: 17px 0px;
-     font-family: roboto;
-     font-size: 14px;
-     /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
-   }
-   
-   .loginmodal-submit:hover {
-     /* border: 1px solid #2f5bb7; */
-     border: 0px;
-     text-shadow: 0 1px rgba(0,0,0,0.3);
-     background-color: #357ae8;
-     /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-   }
-   
-   .loginmodal-container a {
-     text-decoration: none;
-     color: #666;
-     font-weight: 400;
-     text-align: center;
-     display: inline-block;
-     opacity: 0.6;
-     transition: opacity ease 0.5s;
-   } 
-   
-   .login-help{
-     font-size: 12px;
-   }
-   .hidden {
-     display:none;
-   }
-   .logged-user {
-     font-weight:bold;
-   }
-   .user-pic {
+
+.user-pic {
        width: 60px;
        height: 60px;
-   }	
+}	
  
- @media (max-width:991px){
- 
-    html{
-       font-size: 55%;
-    }
- 
- }
- 
- @media (max-width:768px){
- 
-    .products-preview .preview img{
-       height: 25rem;
-    }
- 
- }
- 
- @media (max-width:450px){
- 
-    html{
-       font-size: 50%;
-    }
- 
- }
   /*============================================================
                         Quick Links Page 
 ============================================================*/
@@ -2129,7 +2129,7 @@ form.sign-in-form {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: #256eff;
+    background: var(--dark-purple);
     color: #fff;
     padding: 0 0.3rem;
     transition: all 0.5s ease;
@@ -2159,11 +2159,11 @@ form.sign-in-form {
 }
 
 .last-price span{
-    color: #f64749;
+    color: var(--dark-purple);
     text-decoration: line-through;
 }
 .new-price span{
-    color: #256eff;
+    color: var(--purple);
 }
 
 .product-detail h2{
@@ -2175,6 +2175,8 @@ form.sign-in-form {
 .product-detail p{
     font-size: 0.9rem;
     opacity: 0.8;
+    text-align: justify;
+    padding-right: 2.2rem;
 }
 
 .product-detail ul{
@@ -2219,11 +2221,11 @@ form.sign-in-form {
 }
 
 .purchase-info .btn:first-of-type{
-    background: #256eff;
+    background: var(--dark-purple);
 }
 
 .purchase-info .btn:last-of-type{
-    background: #f64749;
+    background: var(--purple);
 }
 
 .purchase-info .btn:hover{
@@ -2253,10 +2255,16 @@ form.sign-in-form {
     font-size: 0.8rem;
     transition: all 0.5s ease;
 }
+
 .social-links a:hover{
     background: #000;
     border-color: transparent;
     color: #fff;
+}
+
+.related{
+    margin-top: 5rem;
+    height: 100vh;
 }
 
 @media screen and (min-width: 992px){

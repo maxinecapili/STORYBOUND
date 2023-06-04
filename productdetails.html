@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STORYBOUND | Product</title>
+        <link rel="icon" href="img/book-logo.png" type="image">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            
+            <div class="logo-container">
+                <img src="img/book-logo.png" alt="book-logo">
+                <a href="#" class="logo">STORYBOUND</a>
+            </div>
+
+            <nav class="nav">
+                <a href="index.html" class="active">Home<span></span></a>
+                <a href="about.html">About<span></span></a>
+                <a href="shop.html">Shop<span></span></a>
+                <a href="review.html">Review<span></span></a>
+                <a href="contact.html">Contact<span></span></a>
+            </nav>
+
+            <div class="header-icons">
+                    <a href="search.html"><i class="fa fa-search"></i></a>
+                    <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                    <i class="fas fa-user" onclick="menuToggle();"></i>
+
+                    <div class="menu">
+                        <img src="./img/people-1.jpg">
+                        <h3>User Account</h3>
+                        <ul>
+                            <li>
+                                <a href="#">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Edit Account</a>    
+                            </li>
+                            <li>
+                                <a href="index.html">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>              
+            </div>
+        </header>
+
+        <section class="product-details-page">
+        <div class = "card-wrapper">
+            <div class = "card">
+              <!-- card left -->
+              <div class = "product-imgs">
+                <div class = "img-display">
+                  <div class = "img-showcase">
+                    <img src = "./img/book-1.jpg">
+                    <img src = "./img/book-2.jpg">
+                    <img src = "./img/book-3.jpg">
+                    <img src = "./img/book-5.jpg">
+                  </div>
+                </div>
+                <div class = "img-select">
+                  <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                      <img src = "./img/book-1.jpg">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "2">
+                      <img src = "./img/book-2.jpg">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "3">
+                      <img src = "./img/book-3.jpg">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "4">
+                      <img src = "./img/book-5.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card right -->
+              <div class = "product-content">
+                <h2 class = "product-title">The Hunger Games</h2>
+                <a href = "#" class = "product-link">Suzanne Collins</a>
+                <div class = "product-rating">
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star-half-alt"></i>
+                  <span>4.7(21)</span>
+                </div>
+      
+                <div class = "product-price">
+                  <p class = "last-price">Old Price: <span>$257.00</span></p>
+                  <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+                </div>
+      
+                <div class = "product-detail">
+                  <h2>about this item: </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                  <ul>
+                    <li><i class="fa fa-check"></i> Color: <span>Black</span></li>
+                    <li><i class="fa fa-check"></i> Available: <span>in stock</span></li>
+                    <li><i class="fa fa-check"></i> Category: <span>Fantasy</span></li>
+                    <li><i class="fa fa-check"></i> Shipping Area: <span>All over the Philippines</span></li>
+                    <li><i class="fa fa-check"></i> Shipping Fee: <span>Free</span></li>
+                  </ul>
+                </div>
+      
+                <div class = "purchase-info">
+                  <input type = "number" min = "0" value = "1">
+                  <button type = "button" class = "btn"><i class = "fas fa-shopping-cart"></i>
+                    Add to Cart 
+                  </button>
+                  <button type = "button" class = "btn"> <i class = "fas fa-heart"></i> Add to Wishlist</button>
+                </div>
+      
+                <div class = "social-links">
+                  <p>Share At:  </p>
+                  <a href = "#">
+                    <i class = "fab fa-facebook-f"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-twitter"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-instagram"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-whatsapp"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>         
+
+        <script>
+            const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+
+        </script>
+        <footer class="footer-area">
+            <div class="footer">
+                <div class="col-footer">
+                    <h4>STORYBOUND</h4>
+                    <p>We are an online bookstore that offers an extensive collection of books designed to meet diverse interests and preferences.</p>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-footer">
+                    <h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+                        <li><a href="review.html"><i class="fas fa-chevron-right"></i> Review</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                        <li><a href="privacypolicy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="terms&conditions.html"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href=""><i class="fa fa-location-arrow"></i>Pampanga, Philippines</a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i> +69 0123 456 789</a></li>
+                        <li><a href=""><i class="far fa-envelope"></i> support@storybound.com</a></li>
+                        <li><a href=""><i class="fas fa-globe-europe"></i> www.storybound.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>STORYBOUND COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.</p>
+            </div>
+    </footer>
+
+
+        <!--Custom JS file link-->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
+

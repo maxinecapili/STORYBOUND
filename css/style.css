@@ -1952,8 +1952,10 @@ form.sign-in-form {
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
 
+  /* Terms and Condition */
+
 .tc{
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 0 10px;
     background-color: rgb(252, 248, 255);
 }
@@ -1982,7 +1984,7 @@ form.sign-in-form {
     height: 100%;
 }
   
-  .tc_wrap .tabs_content{
+.tc_wrap .tabs_content{
     background-color: rgb(247, 239, 255);
     width: calc(100% - 200px);
     padding: 0 10px 0 20px;
@@ -2086,6 +2088,25 @@ form.sign-in-form {
     background: var(--dark-purple);
     border-color: var(--dark-purple);
   }
+
+/* Privacy Policy */
+
+.pp{
+    min-height: 80vh;
+    padding: 0 10px;
+    background-color: rgb(252, 248, 255);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pp h2{
+    color: var(--dark-purple);
+}
+
+.pp .card{
+    padding-bottom: 1rem;
+}
+	
 
  /*============================================================
                         Product Details Page 

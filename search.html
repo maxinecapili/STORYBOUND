@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+
+	<style>
+		section {
+			font-family: Poppins, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-left: 50px;
+		}
+
+    .heart {
+			display: flex;
+			align-items: center;
+		}
+		body {
+			background-image: linear-gradient(#3f2874,#6e07696f ),url('img/background2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+    #page-wrap {
+      position: relative;
+      z-index: 2;
+      width: 600px;
+      border-radius: 15px;
+      margin: 50px auto;
+      margin-top: 25%; /* Updated margin-top value */
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.5); 
+      box-shadow: 0 0 20px black;
+      list-style: none;
+      padding: 10px;
+    }
+
+    #page-wrap .book-item:not(:last-child) {
+      border-bottom: 5px solid #3f2874; 
+      padding-bottom: 20px; 
+    }
+
+    .pqs {
+			display: flex;
+			justify-content: space-between;
+		}
+
+    #bookList img{
+      width: 250px;
+      height: auto;
+      align-items: center;
+    }
+
+        .container {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 60px;
+            padding: 30px 20px;
+        }
+
+        #searchInput {
+            font-size: 20px; 
+        }
+
+        .book-item {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 20px;
+          background-color: rgba(255, 255, 255, 0); /* Set the background color to 100% transparent */
+          padding: 20px;
+          width: 300px;
+          margin: 5px auto;
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+        }
+
+      .book-item img{
+          width: 250px;
+          height: auto;
+      }
+
+      #bookList {
+          margin-top: 10%;
+          list-style: none;
+          padding: 0;
+      }
+
+		.content h3 {
+			color: black;
+		}
+
+		.content .price span {
+			text-decoration: line-through;
+			color: black;
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/book-logo.png" alt="book-logo">
+            <a href="#" class="logo">STORYBOUND</a>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Home<span></span></a>
+            <a href="about.html">About<span></span></a>
+            <a href="shop.html">Shop<span></span></a>
+            <a href="review.html">Review<span></span></a>
+            <a href="contact.html">Contact<span></span></a>
+            <a href="genre.html">Genre<span></span></a>
+        </nav>
+
+        <div class="header-icons">
+                <a href="search.html"><i class="fa fa-search"></i></a>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                <a href="account.html" class="login-btn">Sign In</a>
+        </div>
+    </header>
+
+<section>
+  <input class="container" type="text" id="searchInput" placeholder="Search...">
+
+<div id="page-wrap">
+  <ul id="bookList">
+    <li class="book-item">
+      <img src="img/book-1.jpg" alt="Book Cover">
+        <div class="content">
+          <h3>The Hunger Games</h3>
+          <div class="price">
+          &#8369;410.94 <span>&#8369;821.88</span>
+          </div>
+          <a href="#" class="featured-btn">Add to Cart</a>
+        </div>
+    </li>
+  
+    <li class="book-item">
+    <img src="img/book-2.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Catching Fire</h3>
+        <div class="price">
+        &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div> 
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-3.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Mockingjay</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-4.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Spinning Silver</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-5.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Raven Boys</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-6.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Dream Thieves</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-7.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Blue Lily, Lily Blue</h3>
+        <div class="price">
+          &#8369;333.59 <span>&#8369;667.18</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-8.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Raven King</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+    
+    <li class="book-item">
+      <img src="img/book-9.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Six of Crows</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-10.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Crooked Kingdom</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-11.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>A History of Burning</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-12.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Yellowface</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-13.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Deep As The Sky, Red As The Sea</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-14.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Alone With You In The Ether</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-15.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Daisy Jones & The Six</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-16.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>If We Were Villains</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-17.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Secret History</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-18.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Normal People</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-19.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Picture of Dorian Gray</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+    
+    <li class="book-item">
+      <img src="img/book-20.png" alt="Book Cover">
+      <div class="content">
+        <h3>The Master & Margarita</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-21.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Poppy War</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-22.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Dragon Republic</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-23.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Burning God</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-24.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Throne of Glass</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-25.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Crown of Midnight</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-26.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Heir of Fire</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-27.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Quees of Shadows</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-28.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Empire of Storm</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-29.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Tower of Dawn</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-30.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Kingdom of Ash</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-31.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Love Hypothesis</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-32.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Blood Gift</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-33.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Silent Bride</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-34.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Wager</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-35.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Do Over</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-36.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Lake House</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-37.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>House of Cotton</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-38.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>What Happened To You</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-39.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Camp Zero</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-40.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Fault In Our Stars</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-41.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>This Delicious Death</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-42.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>The Violin Conspiracy</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-43.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>A Whole Song and Dance</h3>
+        <div class="price">
+          &#8369;666.66 <span>&#8369;999.99</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-44.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>High School Musical: The Junior Novel</h3>
+        <div class="price">
+          &#8369;410.94 <span>&#8369;821.88</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+    <li class="book-item">
+      <img src="img/book-45.jpg" alt="Book Cover">
+      <div class="content">
+        <h3>Symphony of Secrets</h3>
+        <div class="price">
+          &#8369;410.94 <span>&#8369;821.88</span>
+        </div>
+        <a href="#" class="featured-btn">Add to Cart</a>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const bookList = document.getElementById('bookList');
+  const books = bookList.getElementsByTagName('li');
+
+  searchInput.addEventListener('input', function() {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    Array.from(books).forEach(function(book) {
+      const bookName = book.textContent.toLowerCase();
+      if (bookName.includes(searchTerm)) {
+        book.style.display = 'block';
+      } else {
+        book.style.display = 'none';
+      }
+    });
+  });
+
+  searchInput.addEventListener('keyup', function() {
+    if (searchInput.value === '') {
+      Array.from(books).forEach(function(book) {
+        book.style.display = 'block';
+      });
+    }
+  });
+</script>
+</section>
+
+
+<footer class="footer-area">
+  <div class="footer">
+      <div class="col-footer">
+          <h4>STORYBOUND</h4>
+          <p>We are an online bookstore that offers an extensive collection of books designed to meet diverse interests and preferences.</p>
+          <div class="social">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+      <div class="col-footer">
+          <h4>Main Menu</h4>
+          <ul>
+              <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+              <li><a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+              <li><a href="review.html"><i class="fas fa-chevron-right"></i> Review</a></li>
+              <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+      </div>
+      <div class="col-footer">
+          <h4>Quick Links</h4>
+          <ul>
+              <li><a href="FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+              <li><a href="privacypolicy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+              <li><a href="terms&conditions.html"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+          </ul>
+      </div>
+      <div class="col-footer">
+          <h4>Contact us</h4>
+          <ul>
+              <li><a href=""><i class="fa fa-location-arrow"></i>
+                  Pampanga, Philippines</a></li>
+              <li><a href=""><i class="fas fa-mobile-alt"></i> +69 0123 456 789</a></li>
+              <li><a href=""><i class="far fa-envelope"></i> support@storybound.com</a></li>
+              <li><a href=""><i class="fas fa-globe-europe"></i> www.storybound.com</a></li>
+          </ul>
+      </div>
+  </div>
+  
+  <div class="copyright">
+      <p>STORYBOUND COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!--Custom JS file link-->
+<script src="js/script.js"></script>
+
+
+
+   
+
+
+
+    
+</body>
+</html>

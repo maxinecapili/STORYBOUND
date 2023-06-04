@@ -26,6 +26,11 @@ window.onscroll = function(){
     scroll1 = scroll2;
 }
 
+function menuToggle(){
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active')
+}
+
 var swiper = new Swiper(".books-slider", {
     loop:true,
     centeredSlides: true,

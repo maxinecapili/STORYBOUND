@@ -51,7 +51,7 @@ header {
     position: fixed;
     top: 0; right: 0; left: 0;
     width: 100%;
-    padding: 10px 80px;
+    padding: 15px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,8 +131,7 @@ header {
     margin-right: .3rem;
     height: 2rem;
     width: 2rem;
-    line-height: 4.5rem;
-    padding: 1px;
+    padding: 6px 15px;
     text-align: center;
     color: var(--white);
     font-size: 18px;
@@ -146,7 +145,7 @@ header {
     position: relative;
     display: inline-block;
     padding: 4px 20px;
-    margin: 10px 0;
+    margin: 10px;
     color: white;
     background: none;
     font-size: 16px;
@@ -155,6 +154,88 @@ header {
     border: 2px solid #ffffff;
     border-radius: 1.5rem;
 }
+
+.menu{
+    background-color:#FFF;
+    box-sizing:0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    width: 200px;
+    transition: 0.5s;
+    top: 100px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu.active{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+
+.menu::before{
+    background-color:#fff;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 26px;
+    transform:rotate(45deg);
+    top:-5px;
+    width: 20px;
+}
+
+.menu img{
+    display: block;
+    margin-left: 50px;
+    padding-top: 5px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.menu h3{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 20px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu h3{
+    color: #818181;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu ul li{
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid rgba(0,0,0,0.05);
+    display: flex;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.menu ul li a{
+    display: inline-block;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.menu ul li:hover a{
+    color: var(--dark-purple);
+}
+
+
 
 /*  Hero Section */
 
@@ -691,6 +772,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .shop-bg h3{
     font-size: 1.3rem;
     font-weight: 400;
@@ -702,26 +784,30 @@ header {
     padding: 0.4rem 0;
     letter-spacing: 4px;
 }
+
 .line div{
     margin: 0 0.2rem;
 }
-.line div:nth-child(1),
-.line div:nth-child(3){
+
+.line div:nth-child(1), .line div:nth-child(3){
     height: 3px;
     width: 70px;
     background: var(--dark-purple);
     border-radius: 5px;
 }
+
 .line{
     display: flex;
     align-items: center;
 }
+
 .line div:nth-child(2){
     width: 10px;
     height: 10px;
     background: var(--dark-purple);
     border-radius: 50%;
 }
+
 .text{
     font-weight: 300;
     opacity: 0.9;
@@ -812,7 +898,9 @@ header {
 	height: 200px;
 }
 
-/* Account Page */
+/*============================================================
+                        Account Page 
+============================================================*/
 
 .account-container {
     position: relative;

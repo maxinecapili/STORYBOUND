@@ -34,6 +34,27 @@
 			padding: 1rem;
 		}
 
+        .checkout-button {
+            position: relative;
+            top: 20px;
+            right: -1150px;
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+
+        .checkout-button:hover {
+        background-color: #45a049;
+        }
+
         #page-wrap {
             position: relative;
             z-index: 2;
@@ -224,16 +245,12 @@
                         <td>Subtotal</td>
                         <td>&#8369;2,199.59</td>
                     </tr>
-                    <tr>
-                        <td>Tax</td>
-                        <td>&#8369;109.98</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>&#8369;2,309.57</td>
-                    </tr>
                 </table>
 		</div>
+
+        <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+
+
 	</div>
     </div>
 

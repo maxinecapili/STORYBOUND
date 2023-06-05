@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORYBOUND | Best Seller</title>
+    <link rel="icon" href="img/book-logo.png" type="image">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+
+    <style>
+        body {
+            background-image: url('img/background2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #a200ffee;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            height: 750px;
+            max-width: 960px;
+            margin: 20px auto;
+            margin-top: 100px;
+            padding: 0 20px;
+            border: 5px outset #6e07696f;
+            background: linear-gradient(to right, rgba(138, 43, 226, 0.7), rgba(148, 0, 211, 0.7));
+            text-align: center;
+        }
+
+        .book {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .book img {
+            margin-top: 20px;
+            width: 150px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .book-info {
+            position: relative;
+            left: -100px;
+            flex: 1;
+            margin-top: 15px;
+        }
+
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .book-author {
+            font-size: 16px;
+            color: #000000;
+            margin: 0 0 10px;
+        }
+
+        .book-description {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .medal img {
+            height: 50px;
+            width: auto;
+        }
+
+        .add-to-cart-button 
+        {
+        position: relative;
+        top: 170px;
+        height: 50px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        .add-to-cart-button:hover {
+        background-color: #0056b3;
+        }
+
+        .stars {
+        font-size: 1rem;
+        position: relative;
+        top: 225px;
+        left: -210px;
+        height: 0px;
+        width: auto;
+        color:#ffee00; 
+        }
+
+        .orders {
+        color:#000000; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+	<header>
+            
+		<div class="logo-container">
+			<img src="img/book-logo.png" alt="book-logo">
+			<a href="#" class="logo">STORYBOUND</a>
+		</div>
+
+		<nav class="nav">
+			<a href="index.html">Home<span></span></a>
+			<a href="about.html">About<span></span></a>
+			<a href="shop.html">Shop<span></span></a>
+			<a href="review.html">Review<span></span></a>
+			<a href="contact.html">Contact<span></span></a>
+		</nav>
+
+		<div class="header-icons">
+				<a href="search.html"><i class="fa fa-search"></i></a>
+				<a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+				<a href="wishlist.html"><i class="fa fa-heart"></i></a>
+				<a href="account.html" class="login-btn">Sign In</a>
+		</div>
+	</header>
+	
+	<section class = "hero-page">
+		<div class = "hero-bg">
+		<h3>STORYBOUND</h3>
+		  <h2>Best Seller</h2>
+		  <div class = "line">
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
+		  <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste facilis quos impedit fuga nobis modi debitis laboriosam velit reiciendis quisquam alias corporis, maxime enim, optio ab dolorum sequi qui.</p>
+		</div>
+	</section>
+
+    <div class="container">
+        <div class="book">
+            <img src="img/book-101.jpg" alt="Book 1">
+
+            <div class = "medal">
+            <img src="img/gold.png">
+            </div>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class = "orders">( 823 )</span>
+             </div>
+
+            <div class="book-info">
+                <h2 class="book-title">Atomic Habits</h2>
+                <p class="book-author">James Clear</p>
+                <p class="book-description">Atomic Habits is a bestselling book by James Clear that teaches how small changes can lead to big results through the power of habits.</p>
+            </div>
+
+
+            <button class="add-to-cart-button">Add to Cart</button>
+
+
+        </div>
+        <div class="book">
+            <img src="img/book-99.jpg" alt="Book 2">
+            <div class = "medal">
+                <img src="img/silver.png">
+            </div>
+
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class = "orders">( 576 )</span>
+             </div>
+
+
+            <div class="book-info">
+                <h2 class="book-title">How to Think Like A Roman Emperor</h2>
+                <p class="book-author">Donald Robertson</p>
+                <p class="book-description">"How to Think Like an Emperor" is a book by Donald Robertson that applies Stoic philosophy, inspired by Marcus Aurelius, to cultivate resilience and wisdom for a fulfilling life.</p>
+            </div>
+
+            <button class="add-to-cart-button">Add to Cart</button>
+
+        </div>
+        <div class="book">
+            <img src="img/book-100.jpg" alt="Book 3">
+            <div class = "medal">
+                <img src="img/bronze.png">
+                </div>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class = "orders">( 250 )</span>
+                 </div>
+    
+
+            <div class="book-info">
+                <h2 class="book-title">The Alchemist</h2>
+                <p class="book-author">Paulo Coelho</p>
+                <p class="book-description">"The Alchemist" by Paulo Coelho is a captivating novel about a shepherd's quest for his personal legend, inspiring readers to follow their dreams and find true fulfillment.</p>
+            
+            </div>
+
+            <button class="add-to-cart-button">Add to Cart</button>
+            
+
+        </div>
+
+        
+
+
+
+        <!-- Add more books here -->
+    </div>
+
+    <footer class="footer-area">
+		<div class="footer">
+			<div class="col-footer">
+				<h4>STORYBOUND</h4>
+				<p>We are an online bookstore that offers an extensive collection of books designed to meet diverse interests and preferences.</p>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="col-footer">
+				<h4>Main Menu</h4>
+				<ul>
+					<li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+					<li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+					<li><a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a></li>
+					<li><a href="review.html"><i class="fas fa-chevron-right"></i> Review</a></li>
+					<li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-footer">
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="FAQs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+					<li><a href="privacypolicy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+					<li><a href="terms&conditions.html"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+				</ul>
+			</div>
+			<div class="col-footer">
+				<h4>Contact us</h4>
+				<ul>
+					<li><a href=""><i class="fa fa-location-arrow"></i>Pampanga, Philippines</a></li>
+					<li><a href=""><i class="fas fa-mobile-alt"></i> +69 0123 456 789</a></li>
+					<li><a href=""><i class="far fa-envelope"></i> support@storybound.com</a></li>
+					<li><a href=""><i class="fas fa-globe-europe"></i> www.storybound.com</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<p>STORYBOUND COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.</p>
+		</div>
+    </footer>
+
+</body>
+</html>

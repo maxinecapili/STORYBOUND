@@ -8,6 +8,8 @@
         <link rel="icon" href="img/book-logo.png" type="image">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
 </head>
 <body>
 
@@ -47,341 +49,194 @@
 		</div>
 	</section>
 
-	<div class="container">
-		<h3 class="title"> Review Section </h3>
-	 
-		<div class="products-container">
-	 
-		   <div class="product" data-name="p-1">
-			  <img src="img/book-1.jpg" alt="">
-			  <h3>The Hunger Games</h3>
-			  <div class="price">&#8369;410.94 </div>
-		   </div>
-	 
-		   <div class="product" data-name="p-2">
-			  <img src="img/book-2.jpg" alt="">
-			  <h3>Catching Fire</h3>
-			  <div class="price">$2.00</div>
-		   </div>
-	 
-		   <div class="product" data-name="p-3">
-			  <img src="img/book-3.jpg" alt="">
-			  <h3>Mockingjay</h3>
-			  <div class="price">$2.00</div>
-		   </div>
-	 
-		   <div class="product" data-name="p-4">
-			  <img src="img/book-4.jpg" alt="">
-			  <h3>Mockingjay</h3>
-			  <div class="price">$2.00</div>
-		   </div>
-	 
-		   <div class="product" data-name="p-5">
-			  <img src="img/book-5.jpg" alt="">
-			  <h3>The Raven Boys</h3>
-			  <div class="price">$2.00</div>
-		   </div>
-	 
-		   <div class="product" data-name="p-6">
-			  <img src="img/book-6.jpg" alt="">
-			  <h3>The Dream Thieves</h3>
-			  <div class="price">$2.00</div>
-		   </div>
-	 
-		</div>
-	 
-	 </div>
-	 
-	 <div class="products-preview">
-		<div class="preview" data-target="p-1">
-			<i class="fas fa-times"></i>
-				<div class = "prev-wrapper">
-					<div class = "card">
-						<div class = "prev-imgs">
-							<div class = "prev-display">
-							<div class = "prev-showcase">
-								<img src = "./img/book-1.jpg">
-							</div>
-							</div>
-						</div>
-				 
-				  <div class = "prev-content">
-					<h2 class = "prev-title">The Hunger Games</h2>
-					<a href = "#" class = "author">Suzanne Collins</a>
-					<div class = "product-rating">
-					  <i class = "fas fa-star"></i>
-					  <i class = "fas fa-star"></i>
-					  <i class = "fas fa-star"></i>
-					  <i class = "fas fa-star"></i>
-					  <i class = "fas fa-star-half-alt"></i>
-					  <span>4.7(21)</span>
-					  <p class = "preview-price"> Price: <span>$257.00</span></p>
+	<section class="review-details-page">
+		<div class="review-details-container">
+		<div class = "card-wrapper">
+			<div class = "card">
+				<div class = "product-imgs">
+					<div class = "img-display">
+					<div class = "img-showcase">
+						<img src = "./img/book-1.jpg">
 					</div>
-				
-					<div class = "prev-detail">
-					  <h2 class="prev-desc">Description: </h2>
-					  <p>In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.</p> 
 					</div>
-		  
-					<div class = "prev-info">
-					  <input type = "number" min = "0" value = "1">
-					  <button type = "button" class = "btn"><i class = "fas fa-shopping-cart"></i>
-						Add to Cart 
-					  </button>
-					  <button type = "button" class = "btn"> <i class = "fas fa-heart"></i> Add to Wishlist</button>
-					</div>
-		  
-					
-							<div class="review-block">	
-								<div class="row">	
-									<div class="col-2">
-										<img src="./img/people-1.jpg" class="img-rounded user-pic">
-											<div class="review-block-name">By <a href="#">Maxine Capili</a>
-											</div>			
-										<div class="review-block-rate">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star-half-alt"></i>	
-										<div class="review-block-date">June 23, 2023</div>
-									<div class="col-2">
-										<div class="review-block-title">Good AF</div>
-												<div class="review-block-description">Can't put down</div>
-									</div>
-								</div>
-							</div>	
-						
 				</div>
-			  </div>
+		 
+		  <div class = "review-content">
+			<h2 class = "product-title">The Hunger Games</h2>
+			<a href = "#" class = "product-link">Suzanne Collins</a>
+			<div class = "product-rating">
+			  <i class = "fas fa-star"></i>
+			  <i class = "fas fa-star"></i>
+			  <i class = "fas fa-star"></i>
+			  <i class = "fas fa-star"></i>
+			  <i class = "fas fa-star-half-alt"></i>
+			  <span>4.7(21)</span>
 			</div>
-		</div>
-	 
-
-		<div class="products-preview">
-			<div class="preview" data-target="p-2">
-				<i class="fas fa-times"></i>
-					<div class = "prev-wrapper">
-						<div class = "card">
-							<div class = "prev-imgs">
-								<div class = "prev-display">
-								<div class = "prev-showcase">
-									<img src = "./img/book-1.jpg">
-								</div>
-								</div>
-							</div>
-					 
-					  <div class = "prev-content">
-						<h2 class = "prev-title">The Hunger Games</h2>
-						<a href = "#" class = "author">Suzanne Collins</a>
-						<div class = "product-rating">
-						  <i class = "fas fa-star"></i>
-						  <i class = "fas fa-star"></i>
-						  <i class = "fas fa-star"></i>
-						  <i class = "fas fa-star"></i>
-						  <i class = "fas fa-star-half-alt"></i>
-						  <span>4.7(21)</span>
-						  <p class = "preview-price"> Price: <span>$257.00</span></p>
-						</div>
-					
-						<div class = "prev-detail">
-						  <h2 class="prev-desc">Description: </h2>
-						  <p>In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.</p> 
-						</div>
-			  
-						<div class = "prev-info">
-						  <input type = "number" min = "0" value = "1">
-						  <button type = "button" class = "btn"><i class = "fas fa-shopping-cart"></i>
-							Add to Cart 
-						  </button>
-						  <button type = "button" class = "btn"> <i class = "fas fa-heart"></i> Add to Wishlist</button>
-						</div>
-			  
-						
-								<div class="review-block">	
-									<div class="row">	
-										<div class="col-2">
-											<img src="./img/people-1.jpg" class="img-rounded user-pic">
-												<div class="review-block-name">By <a href="#">Maxine Capili</a>
-												</div>			
-											<div class="review-block-rate">
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i>
-												<i class="fas fa-star-half-alt"></i>	
-											<div class="review-block-date">June 23, 2023</div>
-										<div class="col-2">
-											<div class="review-block-title">Good AF</div>
-													<div class="review-block-description">Can't put down</div>
-										</div>
-									</div>
-								</div>	
-							
-					</div>
-				  </div>
-				</div>
+  
+			<div class = "product-price">
+			  <p class = "last-price">Old Price: <span>$257.00</span></p>
+			  <p class = "new-price">Discounted Price: <span>$249.00 (5%)</span></p>
 			</div>
-
-
-
-		<div class="preview" data-target="p-2">
-		   <i class="fas fa-times"></i>
-		   <img src="img/book-2.jpg" alt="">
-		   <h3>Catching Fire</h3>
-		   <div class="stars">
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star-half-alt"></i>
-			  <span>( 250 )</span>
-		   </div>
-		   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-		   <div class="price">$2.00</div>
-		   <div class="buttons">
-			  <a href="#" class="buy">buy now</a>
-			  <a href="#" class="cart">add to cart</a>
-		   </div>
-		</div>
-	 
-		<div class="preview" data-target="p-3">
-		   <i class="fas fa-times"></i>
-		   <img src="img/book-3.jpg" alt="">
-		   <h3>Mockingjay</h3>
-		   <div class="stars">
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star-half-alt"></i>
-			  <span>( 250 )</span>
-		   </div>
-		   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-		   <div class="price">$2.00</div>
-		   <div class="buttons">
-			  <a href="#" class="buy">buy now</a>
-			  <a href="#" class="cart">add to cart</a>
-		   </div>
-		</div>
-	 
-		<div class="preview" data-target="p-4">
-		   <i class="fas fa-times"></i>
-		   <img src="img/book-4.jpg" alt="">
-		   <h3>The Raven Boys</h3>
-		   <div class="stars">
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star-half-alt"></i>
-			  <span>( 250 )</span>
-		   </div>
-		   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-		   <div class="price">$2.00</div>
-		   <div class="buttons">
-			  <a href="#" class="buy">buy now</a>
-			  <a href="#" class="cart">add to cart</a>
-		   </div>
-		</div>
-	 
-		<div class="preview" data-target="p-5">
-		   <i class="fas fa-times"></i>
-		   <img src="img/book-5.jpg" alt="">
-		   <h3>The Raven Boys</h3>
-		   <div class="stars">
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star-half-alt"></i>
-			  <span>( 250 )</span>
-		   </div>
-		   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-		   <div class="price">$2.00</div>
-		   <div class="buttons">
-			  <a href="#" class="buy">buy now</a>
-			  <a href="#" class="cart">add to cart</a>
-		   </div>
-		</div>
-	 
-		<div class="preview" data-target="p-6">
-		   <i class="fas fa-times"></i>
-		   <img src="img/book-6.jpg" alt="">
-		   <h3>The Dream Thieves</h3>
-		   <div class="stars">
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star"></i>
-			  <i class="fas fa-star-half-alt"></i>
-			  <span>( 250 )</span>
-		   </div>
-		   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-		   <div class="price">$2.00</div>
-		   <div class="buttons">
-			  <a href="#" class="buy">buy now</a>
-			  <a href="#" class="cart">add to cart</a>
-		   </div>
-
-		   <div class="row">
-			<div class="col-sm-7">
-				<div class="review-block">				
-					<div class="row">
-						<div class="col-sm-3">
-							<img src="./img/people-1.jpg" class="img-rounded user-pic">
-							<div class="review-block-name">By <a href="#">Maxine Capili</a></div>
-							<div class="review-block-date">June 23, 2023</div>
-						</div>
-						<div class="col-sm-9">
-							<div class="review-block-rate">
-							
-								<button type="button" class="btn btn-xs" aria-label="Left Align">
-								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-								</button>								
-								
-								
-							</div>
-							<div class="review-block-title">Good AF</div>
-							<div class="review-block-description">Can't put down></div>
-						</div>
-					</div>
-					<hr/>					
-			
-				</div>
+  
+			<div class = "product-detail">
+			  <h2>Description: </h2>
+			  <p>In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.</p> 
+			  <ul>
+				<li><i class="fa fa-check"></i> Format: <span>Paperback</span></li>
+				<li><i class="fa fa-check"></i> Available: <span>in stock</span></li>
+				<li><i class="fa fa-check"></i> Category: <span>Fantasy</span></li>
+				<li><i class="fa fa-check"></i> Shipping Area: <span>All over the Philippines</span></li>
+				<li><i class="fa fa-check"></i> Shipping Fee: <span>Free</span></li>
+			  </ul>
 			</div>
-			
-		</div>
-
-		   <div class="modal fade">
-			<div class="modal-dialog">
-				<div class="loginmodal-container">
-					<h1>Login to rate this product</h1><br>
-					<form method="post" id="loginForm" name="loginForm">
-						<input type="text" name="user" placeholder="Username" required>
-						<input type="password" name="pass" placeholder="Password" required>
-						<input type="hidden" name="action" value="userLogin">
-						<input type="submit" name="login" class="login loginmodal-submit" value="Login">					 
-					</form>
-				</div>
+  
+			<div class = "purchase-info">
+			  <input type = "number" min = "0" value = "1">
+			  <button type = "button" class = "btn"><i class = "fas fa-shopping-cart"></i>
+				Add to Cart 
+			  </button>
+			  <button type = "button" class = "btn"> <i class = "fas fa-heart"></i> Add to Wishlist</button>
 			</div>
+  
+			<div class = "social-links">
+			  <p>Share At:  </p>
+			  <a href = "#">
+				<i class = "fab fa-facebook-f"></i>
+			  </a>
+			  <a href = "#">
+				<i class = "fab fa-twitter"></i>
+			  </a>
+			  <a href = "#">
+				<i class = "fab fa-instagram"></i>
+			  </a>
+			  <a href = "#">
+				<i class = "fab fa-whatsapp"></i>
+			  </a>
+			  <a href = "#">
+				<i class = "fab fa-pinterest"></i>
+			  </a>
+			</div>
+		  </div>
 		</div>
-
-		</div>
-		
-		
-		
-		
-
+	  </div>
 	</div>
-	
-	
-</div>	
-		</div>	
-	
-		</section>
+	</section>         
 
+	<section class="related">
+	<div class="featured" id="featured">
+		<h1 class="heading"><span>Related Products</span></h1>
+		<div class="swiper featured-slider">
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-2.jpg">
+				</div>
+				<div class="content">
+					<h3>Catching Fire</h3>
+					<div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-3.jpg">
+				</div>
+				<div class="content">
+					<h3>Mockingjay</h3>
+					<div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-4.jpg">
+				</div>
+				<div class="content">
+					<h3>The Raven Boys</h3>
+					<div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-5.jpg">
+				</div>
+				<div class="content">
+					<h3>The Raven Boys</h3>
+					<div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-6.jpg">
+				</div>
+				<div class="content">
+					<h3>The Dream Thieves</h3>
+					<div class="price">&#8369;666.66<span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-7.jpg">
+				</div>
+				<div class="content">
+					<h3>Blue Lily, Lily Blue</h3>
+					<div class="price">&#8369;333.59 <span>&#8369;667.18</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-8.jpg">
+				</div>
+				<div class="content">
+					<h3>The Raven King</h3>
+					<div class="price">&#8369;666.66 <span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-9.jpg">
+				</div>
+				<div class="content">
+					<h3>Six of Crows</h3>
+					<div class="price">&#8369;666.66 <span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
+
+				<div class="swiper-slide box">
+				<div class="images">
+					<img src="img/book-10.jpg">
+				</div>
+				<div class="content">
+					<h3>Crooked Kingdom</h3>
+					<div class="price">&#8369;666.66 <span>&#8369;999.99</span></div>
+					<a href="#" class="featured-btn">Add to Cart</a>
+				</div>
+				</div>
 			
+			</div>
+
+			<div class="swiper-button-next swiper-button-black"></div>
+			<div class="swiper-button-prev"></div>
+
+		</div>
+	</div>
+</section>
+
 
 	<footer class="footer-area">
 		<div class="footer">
@@ -428,31 +283,8 @@
 		</div>
 </footer>
 
-<script>
-	let preveiwContainer = document.querySelector('.products-preview');
-	let previewBox = preveiwContainer.querySelectorAll('.preview');
 
-	document.querySelectorAll('.products-container .product').forEach(product =>{
-	product.onclick = () =>{
-		preveiwContainer.style.display = 'flex';
-		let name = product.getAttribute('data-name');
-		previewBox.forEach(preview =>{
-		let target = preview.getAttribute('data-target');
-		if(name == target){
-			preview.classList.add('active');
-		}
-		});
-	};
-	});
-
-	previewBox.forEach(close =>{
-	close.querySelector('.fa-times').onclick = () =>{
-		close.classList.remove('active');
-		preveiwContainer.style.display = 'none';
-	};
-	});
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <!--Custom JS file link-->
 <script src="js/script.js"></script>
 </body>
